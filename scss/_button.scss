@@ -1,18 +1,25 @@
+@import 'colors';
+@import 'font';
+
 .full{
 /* BOTÃO 1 */
 /* Auto layout */
 display: flex;
 flex-direction: row;
-align-items: flex-start;
-padding: 20px 50px;
+align-items: center;
+justify-content: center;
 gap: 10px;
 
 position: relative;
-width: 147px;
+width: 225px;
 height: 61px;
 
 background: $main-color;
 border-radius: 5px;
+color: #FFFFFF;
+text-transform: uppercase;
+font-size: $sub-title3;
+font-weight: 700;
 }
 
 .outline{
@@ -21,14 +28,18 @@ box-sizing: border-box;
 /* Auto layout */
 display: flex;
 flex-direction: row;
-align-items: flex-start;
-padding: 20px 50px;
+align-items: center;
+justify-content: center;
 gap: 10px;
 
 position: relative;
-width: 147px;
+width: 225px;
 height: 61px;
 
 border: 1px solid #FFFFFF;
 border-radius: 5px;
+color: #FFFFFF;
+text-transform: uppercase;
+font-size: $sub-title3;
+font-weight: 700;
 }
