@@ -140,32 +140,62 @@ main .main__sub-title p {
     margin-top: 35px; }
   #content {
     width: 100%;
-    height: auto;
     padding: 0 20px 35px 20px;
     background: #2c2c2c;
     background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
-  section .titleArea {
+  section .content__titleArea {
     width: 100%;
     height: auto;
     display: flex;
     align-items: flex-start; }
-  section .squareStyle {
+  section .content__titleArea__squareStyle {
     width: 105px;
     height: 100px;
     position: absolute; }
-  section .content-title,
-  section .content-desc {
+  section .content__titleArea--title,
+  section .content__titleArea--desc {
     text-align: left; }
-  section .content-title h2 {
-    width: 338px;
+  section .content__titleArea--title h2 {
+    width: 200px;
     font-size: 5rem;
     padding-left: 8px;
     padding-top: 40px;
     font-weight: 400;
     color: #fff;
     margin: 0; }
-  section .content-desc p {
+  section .content__titleArea--desc p {
     font-size: 1.6rem;
     color: #b5b5b5; }
-  section .content-desc p span {
-    font-weight: 700; } }
+  section .content__titleArea--desc p span {
+    font-weight: 700; }
+  section .content__cardArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    gap: 18px; }
+  section .content__cardArea__card {
+    width: 258px;
+    height: 255px;
+    border: 1px solid #6E6E6E; }
+  section .content__card__photo {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-block: 20px; }
+  section .content__card__textArea {
+    width: 100%;
+    height: auto;
+    padding-inline: 20px;
+    font-size: 1.6rem;
+    font-weight: 700; }
+  section .content__card__textArea-title h5 {
+    text-transform: uppercase;
+    margin: 0;
+    color: #F89D24; }
+  section .content__card__textArea-desc p {
+    margin: 0;
+    color: #b5b5b5; } }
