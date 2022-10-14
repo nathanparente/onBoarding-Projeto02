@@ -95,7 +95,7 @@ main .main__sub-title {
 main .main__sub-title p {
   width: 583px; }
 
-#callToAction {
+main #callToAction {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -104,7 +104,7 @@ main .main__sub-title p {
   gap: 30px;
   margin-top: 85px; }
 
-@media (max-width: 1024px) {
+@media only screen and (min-width: 1440px) {
   main {
     padding: 40px 25px;
     height: 740px; }
@@ -121,7 +121,119 @@ main .main__sub-title p {
     font-size: 2rem;
     color: #b5b5b5; } }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+  main {
+    padding: 40px 25px;
+    height: 740px; }
+  main .main__logo svg {
+    width: 110px;
+    height: 90px; }
+  main .main__title {
+    margin-top: 100px; }
+  main .main__title h1 {
+    font-size: 4.8rem; }
+  main .main__sub-title {
+    height: auto;
+    text-align: center;
+    font-size: 2rem;
+    color: #b5b5b5; }
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px 40px 40px;
+    background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
+  section .left-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  section .content__textArea {
+    display: flex;
+    flex-direction: column; }
+  section #content__textArea__callToAction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    gap: 0;
+    margin-top: 0;
+    margin-left: 50px; }
+  section #content__textArea__callToAction div {
+    width: 100%;
+    text-align: left; }
+  section #content__textArea__callToAction .outline {
+    margin-bottom: 30px; }
+  section #content__textArea__callToAction p {
+    color: white;
+    font-size: 1.6rem;
+    margin: 0; }
+  section .content__textArea__titleArea {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start; }
+  section .content__textArea__titleArea__squareStyle svg {
+    width: 150px;
+    height: 150px;
+    position: absolute; }
+  section .content__textArea__titleArea--title,
+  section .content__textArea__titleArea--desc {
+    text-align: left; }
+  section .content__textArea__titleArea--title h2 {
+    width: 200px;
+    font-size: 4.8rem;
+    padding-left: 50px;
+    padding-top: 90px;
+    font-weight: 400;
+    color: white;
+    margin: 0; }
+  section .content__textArea__titleArea--desc {
+    width: 460px; }
+  section .content__textArea__titleArea--desc p {
+    font-size: 2rem;
+    padding-left: 50px;
+    color: white; }
+  section .content__textArea__titleArea--desc p span {
+    font-weight: 700; }
+  section .content__cardArea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    gap: 18px; }
+  section .content__cardArea__card {
+    width: 258px;
+    height: 255px;
+    border: 1px solid #6E6E6E; }
+  section .content__card__photo {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-block: 20px; }
+  section .content__card__textArea {
+    width: 100%;
+    height: auto;
+    padding-inline: 20px;
+    font-size: 1.6rem;
+    font-weight: 700; }
+  section .content__card__textArea-title h5 {
+    text-transform: uppercase;
+    margin: 0;
+    color: #F89D24; }
+  section .content__card__textArea-desc p {
+    margin: 0;
+    color: #b5b5b5; }
+  section#content #callToAction {
+    display: none; } }
+
+@media only screen and (max-width: 768px) {
   main {
     padding: 35px 20px;
     height: auto; }
@@ -135,39 +247,37 @@ main .main__sub-title p {
     font-size: 4.8rem; }
   main .main__sub-title {
     font-size: 1.4rem; }
-  #callToAction {
-    flex-direction: column;
-    margin-top: 35px; }
+  main #callToAction {
+    flex-direction: column; }
   #content {
-    width: 100%;
-    padding: 0 20px 35px 20px;
-    background: #2c2c2c;
-    background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
-  section .content__titleArea {
-    width: 100%;
-    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  section .content__textArea {
     display: flex;
-    align-items: flex-start; }
-  section .content__titleArea__squareStyle {
+    flex-direction: column; }
+  section #content__textArea__callToAction {
+    display: none; }
+  section .content__textArea__titleArea__squareStyle svg {
     width: 105px;
-    height: 100px;
-    position: absolute; }
-  section .content__titleArea--title,
-  section .content__titleArea--desc {
-    text-align: left; }
-  section .content__titleArea--title h2 {
-    width: 200px;
-    font-size: 5rem;
-    padding-left: 8px;
+    height: 100px; }
+  section .content__textArea__titleArea--title h2 {
     padding-top: 40px;
-    font-weight: 400;
-    color: #fff;
-    margin: 0; }
-  section .content__titleArea--desc p {
+    padding-left: 8px; }
+  section .content__textArea__titleArea--desc {
+    width: 100%; }
+  section .content__textArea__titleArea--desc p {
     font-size: 1.6rem;
+    padding-left: 0;
     color: #b5b5b5; }
-  section .content__titleArea--desc p span {
-    font-weight: 700; }
+  section#content #callToAction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    width: 100%;
+    gap: 30px; }
   section .content__cardArea {
     display: flex;
     flex-direction: column;
