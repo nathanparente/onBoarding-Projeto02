@@ -114,8 +114,7 @@ main #callToAction {
 
 section .left-area {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  flex-direction: column; }
 
 section .content__textArea {
   display: flex;
@@ -229,7 +228,7 @@ section#content #callToAction {
 
 @media only screen and (max-width: 1440px) {
   main {
-    padding: 40px 25px;
+    padding: 25px 120px;
     height: 740px; }
   main .main__logo svg {
     width: 110px;
@@ -261,6 +260,33 @@ section#content #callToAction {
   section#content #callToAction {
     display: none; } }
 
+@media only screen and (max-width: 1234px) {
+  #content {
+    flex-direction: column; }
+  section .left-area {
+    flex-direction: row;
+    justify-content: space-around; }
+  section #content__textArea__callToAction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    gap: 0;
+    margin-top: 0;
+    margin-left: 50px; }
+  section #content__textArea__callToAction div {
+    flex-direction: column;
+    width: 100%;
+    text-align: left; }
+  section #content__textArea__callToAction .outline {
+    margin-bottom: 0; }
+  section #content__textArea__callToAction p {
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 0;
+    margin: 0; } }
+
 @media only screen and (max-width: 1024px) {
   main {
     padding: 40px 25px;
@@ -286,8 +312,7 @@ section#content #callToAction {
     background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
   section .left-area {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
+    flex-direction: row; }
   section .content__textArea {
     display: flex;
     flex-direction: column; }
@@ -296,18 +321,20 @@ section#content #callToAction {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 190px;
     gap: 0;
     margin-top: 0;
     margin-left: 50px; }
   section #content__textArea__callToAction div {
+    flex-direction: column;
     width: 100%;
     text-align: left; }
   section #content__textArea__callToAction .outline {
-    margin-bottom: 30px; }
+    margin-bottom: 0; }
   section #content__textArea__callToAction p {
     color: white;
     font-size: 1.6rem;
+    padding-left: 0;
     margin: 0; }
   section .content__textArea__titleArea {
     width: 100%;
