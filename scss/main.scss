@@ -122,6 +122,7 @@ section .content__textArea__titleArea {
   height: auto;
   display: flex;
   align-items: flex-start;
+  margin-bottom: 15px;
 }
 section .content__textArea__titleArea__squareStyle svg {
   width: 200px;
@@ -151,6 +152,7 @@ section .content__textArea__titleArea--desc p {
   font-size: 2rem;
   padding-left: 77px;
   color: white;
+  margin: 0;
 }
 section .content__textArea__titleArea--desc p span {
   font-weight: 700;
@@ -510,11 +512,10 @@ section .valueArea__valueButton .full {
     justify-content: space-between;
     width: 100%;
     padding: 0 40px 40px 40px;
-    background: radial-gradient(
-      circle,
-      rgba(44, 44, 44, 1) 0%,
-      rgba(26, 26, 26, 1) 100%
-    );
+    background-image: url(../images/teacher.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
   }
   section .content__textArea {
     display: flex;
@@ -542,7 +543,8 @@ section .valueArea__valueButton .full {
     padding-left: 0;
     color: $grey;
   }
-  section#content #callToAction {
+  section#content #callToAction,
+  section#content--banner #callToAction {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -627,17 +629,22 @@ section .valueArea__valueButton .full {
     background-color: $background-secondary-color;
     padding: 10px 15px;
   }
+  section .content--banner__competences-card:first-child {
+    margin-top: 30px;
+  }
   section .content--banner__competences-card h6 {
     font-size: $body-font2;
-    font-weight: 700;
+    font-weight: 400;
     color: white;
     margin: 0;
   }
-  section .content--banner__competences-card img {
+  section .content--banner__competences-card svg {
     width: 11px;
     height: 6px;
+    transform: rotate(180deg);
   }
   section .content--banner__competences-card-desc {
+    display: none; //DISPLAY NONE ATÉ SER ATIVIDADO PELO EVENTO DE CLICK
     width: 100%;
     height: auto;
     padding: 25px 32px;

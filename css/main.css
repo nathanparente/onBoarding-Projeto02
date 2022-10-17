@@ -153,7 +153,8 @@ section .content__textArea__titleArea {
   width: 100%;
   height: auto;
   display: flex;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-bottom: 15px; }
 
 section .content__textArea__titleArea__squareStyle svg {
   width: 200px;
@@ -182,7 +183,8 @@ section .content__textArea__titleArea--desc {
 section .content__textArea__titleArea--desc p {
   font-size: 2rem;
   padding-left: 77px;
-  color: white; }
+  color: white;
+  margin: 0; }
 
 section .content__textArea__titleArea--desc p span {
   font-weight: 700; }
@@ -481,7 +483,10 @@ section .valueArea__valueButton .full {
     justify-content: space-between;
     width: 100%;
     padding: 0 40px 40px 40px;
-    background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
+    background-image: url(../images/teacher.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat; }
   section .content__textArea {
     display: flex;
     flex-direction: column; }
@@ -502,7 +507,8 @@ section .valueArea__valueButton .full {
     font-size: 1.6rem;
     padding-left: 0;
     color: #b5b5b5; }
-  section#content #callToAction {
+  section#content #callToAction,
+  section#content--banner #callToAction {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -573,15 +579,19 @@ section .valueArea__valueButton .full {
     height: auto;
     background-color: #686868;
     padding: 10px 15px; }
+  section .content--banner__competences-card:first-child {
+    margin-top: 30px; }
   section .content--banner__competences-card h6 {
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 400;
     color: white;
     margin: 0; }
-  section .content--banner__competences-card img {
+  section .content--banner__competences-card svg {
     width: 11px;
-    height: 6px; }
+    height: 6px;
+    transform: rotate(180deg); }
   section .content--banner__competences-card-desc {
+    display: none;
     width: 100%;
     height: auto;
     padding: 25px 32px;
