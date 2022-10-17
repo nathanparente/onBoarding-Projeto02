@@ -194,6 +194,48 @@ section .content__card__textArea-desc p {
 section#content #callToAction {
   display: none;
 }
+section.valueArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-image: url(../images/HexagonosBackground.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 0 0 120px;
+}
+section .valueArea__slogan h5 {
+  max-width: 706px;
+  font-size: $title-h2;
+  font-weight: 400;
+  color: white;
+  padding: 66px 40px;
+  line-height: 52.5px;
+}
+section .valueArea__valueButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 660px;
+  height: auto;
+  background-color: $main-color;
+  padding: 76px 28px;
+  margin-block: 40px;
+}
+section .valueArea__valueButton p {
+  width: 368px;
+  color: white;
+  font-size: $title-h1;
+  margin: 0 0 25px 0;
+}
+section .valueArea__valueButton .full {
+  color: $main-color;
+  background: white;
+}
 @media only screen and (max-width: 1440px) {
   main {
     padding: 25px 120px;
@@ -215,6 +257,9 @@ section#content #callToAction {
     font-size: 2rem;
     color: $grey;
   }
+  section .valueArea__valueButton {
+    width: 500px;
+  }
 
   section #content__textArea__callToAction {
     margin-left: 50px;
@@ -233,7 +278,6 @@ section#content #callToAction {
   }
   section .content__cardArea {
     flex-direction: row;
-    width: 100%;
     height: auto;
   }
   section#content #callToAction {
@@ -271,6 +315,9 @@ section#content #callToAction {
     font-size: $body-font2;
     padding-left: 0;
     margin: 0;
+  }
+  section .content__cardArea {
+    align-self: center;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -379,7 +426,7 @@ section#content #callToAction {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 545px;
     height: auto;
     margin-top: 80px;
     gap: 18px;
@@ -414,6 +461,19 @@ section#content #callToAction {
   }
   section#content #callToAction {
     display: none;
+  }
+  section.valueArea {
+    padding: 0;
+  }
+  section .valueArea__valueButton {
+    width: 300px;
+  }
+  section .valueArea__valueButton p {
+    width: 300px;
+    font-size: $title-h2;
+  }
+  section .valueArea__valueButton .full {
+    width: 200px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -511,5 +571,35 @@ section#content #callToAction {
   section .content__card__textArea-desc p {
     margin: 0;
     color: $grey;
+  }
+  section.valueArea {
+    flex-direction: column;
+  }
+  section .valueArea__slogan {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/HexagonosBackground.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  section .valueArea__slogan h5 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 35px 25px;
+  }
+  section .valueArea__valueButton {
+    width: 100%;
+    height: auto;
+    padding: 35px 64px;
+    margin-block: 0;
+  }
+  section .valueArea__valueButton p {
+    padding: 35px 25px;
+    margin: 0;
+  }
+  section .valueArea__valueButton .full {
+    color: $main-color;
+    background: white;
   }
 }
