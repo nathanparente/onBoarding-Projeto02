@@ -475,6 +475,13 @@ section .valueArea__valueButton .full {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; }
+  #content--banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px 40px 40px;
+    background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
   section .content__textArea {
     display: flex;
     flex-direction: column; }
@@ -557,4 +564,28 @@ section .valueArea__valueButton .full {
     margin: 0; }
   section .valueArea__valueButton .full {
     color: #F89D24;
-    background: white; } }
+    background: white; }
+  section .content--banner__competences-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #686868;
+    padding: 10px 15px; }
+  section .content--banner__competences-card h6 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    margin: 0; }
+  section .content--banner__competences-card img {
+    width: 11px;
+    height: 6px; }
+  section .content--banner__competences-card-desc {
+    width: 100%;
+    height: auto;
+    padding: 25px 32px;
+    background-color: #262626; }
+  section .content--banner__competences-card-desc p {
+    color: white;
+    font-size: 1.6rem; } }
