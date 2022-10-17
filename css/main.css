@@ -164,8 +164,11 @@ section .content__textArea__titleArea--title,
 section .content__textArea__titleArea--desc {
   text-align: left; }
 
+section .content__textArea__titleArea--title {
+  width: 100%; }
+
 section .content__textArea__titleArea--title h2 {
-  width: 200px;
+  width: 368px;
   font-size: 6.4rem;
   padding-left: 77px;
   padding-top: 120px;
@@ -307,8 +310,7 @@ section .valueArea__valueButton .full {
   #content {
     flex-direction: column; }
   section .left-area {
-    flex-direction: row;
-    justify-content: space-around; }
+    flex-direction: row; }
   section #content__textArea__callToAction {
     display: flex;
     flex-direction: column;
@@ -394,7 +396,6 @@ section .valueArea__valueButton .full {
   section .content__textArea__titleArea--desc {
     text-align: left; }
   section .content__textArea__titleArea--title h2 {
-    width: 200px;
     font-size: 4.8rem;
     padding-left: 50px;
     padding-top: 90px;
@@ -473,7 +474,7 @@ section .valueArea__valueButton .full {
   #content {
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: flex-start; }
   section .content__textArea {
     display: flex;
     flex-direction: column; }
@@ -483,8 +484,11 @@ section .valueArea__valueButton .full {
     width: 105px;
     height: 100px; }
   section .content__textArea__titleArea--title h2 {
-    padding-top: 40px;
-    padding-left: 8px; }
+    width: 200px;
+    font-size: 4.2rem;
+    padding-top: 50px;
+    padding-left: 8px;
+    margin: 0; }
   section .content__textArea__titleArea--desc {
     width: 100%; }
   section .content__textArea__titleArea--desc p {

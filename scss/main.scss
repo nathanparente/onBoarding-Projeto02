@@ -132,8 +132,11 @@ section .content__textArea__titleArea--title,
 section .content__textArea__titleArea--desc {
   text-align: left;
 }
+section .content__textArea__titleArea--title {
+  width: 100%;
+}
 section .content__textArea__titleArea--title h2 {
-  width: 200px;
+  width: 368px;
   font-size: $title-h1;
   padding-left: 77px;
   padding-top: 120px;
@@ -290,7 +293,6 @@ section .valueArea__valueButton .full {
   }
   section .left-area {
     flex-direction: row;
-    justify-content: space-around;
   }
   section #content__textArea__callToAction {
     display: flex;
@@ -401,7 +403,6 @@ section .valueArea__valueButton .full {
     text-align: left;
   }
   section .content__textArea__titleArea--title h2 {
-    width: 200px;
     font-size: $title-h2;
     padding-left: 50px;
     padding-top: 90px;
@@ -501,7 +502,7 @@ section .valueArea__valueButton .full {
   #content {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   section .content__textArea {
     display: flex;
@@ -515,8 +516,11 @@ section .valueArea__valueButton .full {
     height: 100px;
   }
   section .content__textArea__titleArea--title h2 {
-    padding-top: 40px;
+    width: 200px;
+    font-size: 4.2rem;
+    padding-top: 50px;
     padding-left: 8px;
+    margin: 0;
   }
   section .content__textArea__titleArea--desc {
     width: 100%;
