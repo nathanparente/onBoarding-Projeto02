@@ -478,6 +478,53 @@ section .valueArea__valueButton .full {
   section .valueArea__valueButton .full {
     width: 200px;
   }
+  #content--banner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 60px 40px 60px 40px;
+    background-image: url(../images/teacher.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  section#content--banner .left-area {
+    display: none;
+  }
+  section .content--banner__competences-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: $background-secondary-color;
+    padding: 40px 14px 40px 20px;
+  }
+  section .content--banner__competences-card:first-child {
+    margin-top: 30px;
+  }
+  section .content--banner__competences-card h6 {
+    font-size: $body-font2;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+  }
+  section .content--banner__competences-card svg {
+    width: 11px;
+    height: 6px;
+    transform: rotate(180deg);
+  }
+  section .content--banner__competences-card-desc {
+    display: flex; //DISPLAY NONE ATÉ SER ATIVIDADO PELO EVENTO DE CLICK
+    width: 100%;
+    height: auto;
+    padding: 65px 54px;
+    background-color: $background-main-color;
+  }
+  section .content--banner__competences-card-desc p {
+    color: white;
+    font-size: $body-font2;
+  }
 }
 @media only screen and (max-width: 768px) {
   main {
@@ -507,15 +554,9 @@ section .valueArea__valueButton .full {
     align-items: flex-start;
   }
   #content--banner {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100%;
     padding: 0 40px 40px 40px;
-    background-image: url(../images/teacher.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
   }
   section .content__textArea {
     display: flex;
