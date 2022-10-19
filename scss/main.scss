@@ -80,6 +80,17 @@ main #callToAction {
     rgba(26, 26, 26, 1) 100%
   );
 }
+#content--banner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 116px 145px 116px 160px;
+  background-image: url(../images/teacher.jpg);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 section .left-area {
   display: flex;
   flex-direction: column;
@@ -241,6 +252,75 @@ section .valueArea__valueButton .full {
   color: $main-color;
   background: white;
 }
+section#content--banner .left-area {
+  display: none;
+}
+section .content--banner__competences-cards {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+section .content--banner__competences-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 460px;
+  height: auto;
+  background-color: $background-secondary-color;
+  padding: 40px 14px 15px 20px;
+}
+section .content--banner__competences-card-title h6 {
+  font-size: $title-h3;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+}
+
+section .content--banner__competences-card-title svg {
+  display: none;
+}
+section .content--banner__competences-card-desc--mobile {
+  display: none; //DISPLAY NONE ATÉ SER ATIVIDADO PELO EVENTO DE CLICK
+}
+section .content--banner__competences-card-desc--desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  padding: 65px 54px 0 54px;
+  background-color: $background-main-color;
+  visibility: visible;
+}
+section .content--banner__competences-card-desc--desktop p {
+  color: white;
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 0 0 15px 0;
+  max-width: 350px;
+}
+section .content--banner__competences-card-desc--desktop__linksArea {
+  max-width: 350px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  font-size: 2rem;
+  margin-bottom: 60px;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+
+    span {
+      color: $main-color;
+    }
+  }
+}
+
+section#content--banner #callToAction {
+  display: none;
+}
 @media only screen and (max-width: 1440px) {
   main {
     padding: 25px 120px;
@@ -287,6 +367,77 @@ section .valueArea__valueButton .full {
   }
   section#content #callToAction {
     display: none;
+  }
+  #content--banner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 60px 40px;
+    background-image: url(../images/teacher.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  section#content--banner .left-area {
+    display: none;
+  }
+  section .content--banner__competences-cards {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  section .content--banner__competences-card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+    height: auto;
+    background-color: $background-secondary-color;
+    padding: 40px 14px 15px 20px;
+  }
+  section .content--banner__competences-card-title h6 {
+    font-size: $title-h3;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+  }
+
+  section .content--banner__competences-card-title svg {
+    display: none;
+  }
+  section .content--banner__competences-card-desc--mobile {
+    display: none; //DISPLAY NONE ATÉ SER ATIVIDADO PELO EVENTO DE CLICK
+  }
+  section .content--banner__competences-card-desc--desktop {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 65px 54px 0 54px;
+    background-color: $background-main-color;
+    visibility: visible;
+  }
+  section .content--banner__competences-card-desc--desktop p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0 0 15px 0;
+  }
+  section .content--banner__competences-card-desc--desktop__linksArea {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: 2rem;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+
+      span {
+        color: $main-color;
+      }
+    }
   }
 }
 @media only screen and (max-width: 1234px) {
@@ -356,6 +507,16 @@ section .valueArea__valueButton .full {
       rgba(44, 44, 44, 1) 0%,
       rgba(26, 26, 26, 1) 100%
     );
+  }
+  #content--banner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 60px 40px;
+    background-image: url(../images/teacher.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
   }
   section .left-area {
     display: flex;
@@ -478,52 +639,70 @@ section .valueArea__valueButton .full {
   section .valueArea__valueButton .full {
     width: 200px;
   }
-  #content--banner {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 60px 40px 60px 40px;
-    background-image: url(../images/teacher.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-  }
   section#content--banner .left-area {
     display: none;
   }
-  section .content--banner__competences-card {
+  section .content--banner__competences-cards {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  section .content--banner__competences-card-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 230px;
     height: auto;
     background-color: $background-secondary-color;
-    padding: 40px 14px 40px 20px;
+    padding: 40px 14px 15px 20px;
   }
-  section .content--banner__competences-card:first-child {
-    margin-top: 30px;
-  }
-  section .content--banner__competences-card h6 {
-    font-size: $body-font2;
+  section .content--banner__competences-card-title h6 {
+    font-size: $title-h3;
     font-weight: 400;
     color: white;
     margin: 0;
   }
-  section .content--banner__competences-card svg {
-    width: 11px;
-    height: 6px;
-    transform: rotate(180deg);
+
+  section .content--banner__competences-card-title svg {
+    display: none;
   }
-  section .content--banner__competences-card-desc {
-    display: flex; //DISPLAY NONE ATÉ SER ATIVIDADO PELO EVENTO DE CLICK
-    width: 100%;
-    height: auto;
-    padding: 65px 54px;
+  section .content--banner__competences-card-desc--mobile {
+    display: none; //DISPLAY NONE ATÉ SER ATIVIDADO PELO EVENTO DE CLICK
+  }
+  section .content--banner__competences-card-desc--desktop {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 65px 54px 0 54px;
     background-color: $background-main-color;
+    visibility: visible;
   }
-  section .content--banner__competences-card-desc p {
+  section .content--banner__competences-card-desc--desktop p {
     color: white;
-    font-size: $body-font2;
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0 0 15px 0;
+  }
+  section .content--banner__competences-card-desc--desktop__linksArea {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: 2rem;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+
+      span {
+        color: $main-color;
+      }
+    }
+  }
+
+  section#content--banner #callToAction {
+    display: none;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -554,9 +733,16 @@ section .valueArea__valueButton .full {
     align-items: flex-start;
   }
   #content--banner {
-    flex-direction: column;
+    display: flex;
+    //flex-direction: row;
     width: 100%;
-    padding: 0 40px 40px 40px;
+    //padding: 60px 40px;
+    background-image: url(../images/teacher.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    padding: 0 40px 60px 40px;
   }
   section .content__textArea {
     display: flex;
@@ -661,7 +847,20 @@ section .valueArea__valueButton .full {
     color: $main-color;
     background: white;
   }
-  section .content--banner__competences-card {
+  section#content--banner .left-area {
+    display: flex;
+  }
+  section#content--banner .left-area {
+    display: flex;
+  }
+  section .content--banner__competences-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  section .content--banner__competences-card-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -670,28 +869,29 @@ section .valueArea__valueButton .full {
     background-color: $background-secondary-color;
     padding: 10px 15px;
   }
-  section .content--banner__competences-card:first-child {
-    margin-top: 30px;
-  }
-  section .content--banner__competences-card h6 {
+  section .content--banner__competences-card-title h6 {
     font-size: $body-font2;
     font-weight: 400;
     color: white;
     margin: 0;
   }
-  section .content--banner__competences-card svg {
+  section .content--banner__competences-card-title svg {
+    display: block;
     width: 11px;
     height: 6px;
     transform: rotate(180deg);
   }
-  section .content--banner__competences-card-desc {
+  section .content--banner__competences-card-desc--mobile {
     display: none; //DISPLAY NONE ATÉ SER ATIVIDADO PELO EVENTO DE CLICK
     width: 100%;
     height: auto;
-    padding: 25px 32px;
+    padding: 65px 54px;
     background-color: $background-main-color;
   }
-  section .content--banner__competences-card-desc p {
+  section .content--banner__competences-card-desc--desktop {
+    display: none;
+  }
+  section .content--banner__competences-card-desc--mobile p {
     color: white;
     font-size: $body-font2;
   }
