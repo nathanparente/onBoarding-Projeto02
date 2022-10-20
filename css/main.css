@@ -120,8 +120,7 @@ main #callToAction {
   background-image: url(../images/teacher.jpg);
   background-size: cover;
   background-position: left;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-repeat: no-repeat; }
 
 section .left-area {
   display: flex;
@@ -221,7 +220,10 @@ section .content__card__photo {
   justify-content: center;
   width: 100%;
   height: auto;
-  padding-block: 20px; }
+  padding: 20px; }
+  section .content__card__photo img.content__card__photo--section01 {
+    width: 98px;
+    height: 96px; }
 
 section .content__card__textArea {
   width: 100%;
@@ -689,7 +691,8 @@ section#content--banner #callToAction {
     padding-left: 8px;
     margin: 0; }
   section .content__textArea__titleArea--desc {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 30px; }
   section .content__textArea__titleArea--desc p {
     font-size: 1.6rem;
     padding-left: 0;
@@ -710,10 +713,11 @@ section#content--banner #callToAction {
     width: 100%;
     height: auto;
     margin: 0;
-    gap: 18px; }
+    gap: 30px; }
   section .content__cardArea__card {
-    width: 258px;
-    height: 255px;
+    width: 100%;
+    max-width: 258px;
+    height: auto;
     border: 1px solid #6E6E6E; }
   section .content__card__photo {
     display: inline-flex;
@@ -724,7 +728,7 @@ section#content--banner #callToAction {
   section .content__card__textArea {
     width: 100%;
     height: auto;
-    padding-inline: 20px;
+    padding: 0 20px 20px 20px;
     font-size: 1.6rem;
     font-weight: 700; }
   section .content__card__textArea-title h5 {
@@ -790,10 +794,36 @@ section#content--banner #callToAction {
     display: none;
     width: 100%;
     height: auto;
-    padding: 65px 54px;
+    padding: 25px 32px;
     background-color: #262626; }
   section .content--banner__competences-card-desc--desktop {
     display: none; }
   section .content--banner__competences-card-desc--mobile p {
     color: white;
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+  section .content__cardArea__card--section03 {
+    max-width: 317px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #6E6E6E; }
+  section .content__card__photo img.content__card__photo--section03 {
+    width: 100%;
+    height: fit-content;
+    max-width: 267px;
+    max-height: 234px; }
+  section .content__card__textArea-title--section03 h5 {
+    text-transform: uppercase;
+    margin: 0;
+    color: #F89D24; }
+  section .content__card__textArea-desc--section03 p {
+    margin: 0;
+    color: #b5b5b5; }
+  section
+.content__cardArea
+.content__cardArea__card--section03:nth-last-child(-n + 2) {
+    display: none; } }
+
+@media only screen and (max-width: 380px) {
+  section .content__cardArea__card--section03 {
+    width: 100%;
+    height: auto; } }
