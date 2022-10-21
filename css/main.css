@@ -56,63 +56,89 @@ body {
   margin: 0;
   padding: 0; }
 
-main {
+.container {
   width: 100%;
   height: 100vh;
-  min-height: 740px;
   padding: 25px 120px;
   background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
 
-main > div[class*="title"] {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+.container--section {
+  height: auto;
+  padding: 0 120px 100px 120px; }
 
-main .main__logo {
-  width: 110px;
-  height: 90px; }
-  main .main__logo svg {
+main {
+  min-height: 740px; }
+  main > div[class*="title"] {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  main .main__logo {
+    width: 110px;
+    height: 90px; }
+    main .main__logo svg {
+      width: 100%;
+      height: auto; }
+  main > .main__title {
+    margin-top: 125px;
+    text-align: center;
+    color: white; }
+    main > .main__title h1 {
+      font-size: 6.4rem;
+      margin: 0 0 35px 0;
+      max-width: 750px;
+      width: auto;
+      font-weight: 400; }
+  main .main__sub-title {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #b5b5b5; }
+    main .main__sub-title p {
+      width: auto;
+      max-width: 583px;
+      margin: 0; }
+  main #callToAction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: auto; }
+    gap: 30px;
+    margin: 65px 0 20px 0; }
 
-main > .main__title {
-  margin-top: 125px;
-  text-align: center;
-  color: white; }
-
-main .main__title h1 {
-  font-size: 6.4rem;
-  margin: 0 0 35px 0;
-  width: 750px;
-  font-weight: 400; }
-
-main .main__sub-title {
-  text-align: center;
-  font-size: 2.4rem;
-  color: #b5b5b5; }
-
-main .main__sub-title p {
-  width: 583px;
-  margin: 0; }
-
-main #callToAction {
+section .container--section01 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 30px;
-  margin-top: 85px; }
+  padding: 0 120px 100px 120px; }
 
-#content {
+section .left-area--section01 {
+  display: flex;
+  flex-direction: column; }
+
+section .left-area__textArea {
+  display: flex;
+  flex-direction: column; }
+
+section .left-area__textArea__titleArea__squareStyle svg {
+  position: absolute; }
+
+section .left-area__textArea__titleArea {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px; }
+
+section .left-area__textArea__callToAction__buttonArea {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 120px 100px 120px;
-  background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
+  gap: 30px; }
 
-#content--banner {
+section#content {
+  display: flex;
+  flex-direction: row;
+  padding: 0 120px 100px 120px; }
+
+section#content--banner {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -122,23 +148,14 @@ main #callToAction {
   background-position: left;
   background-repeat: no-repeat; }
 
-#content--section03 {
+section#content--section03 {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 0 120px 100px 120px;
   background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
 
-section .left-area--section01 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-section .content__textArea {
-  display: flex;
-  flex-direction: column; }
-
-section #content__textArea__callToAction {
+section #left-area__textArea__callToAction {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,11 +164,6 @@ section #content__textArea__callToAction {
   gap: 0;
   margin-top: 0;
   margin-left: 77px; }
-
-section .content__textArea__callToAction__buttonArea {
-  display: flex;
-  flex-direction: row;
-  gap: 30px; }
 
 section #content__textArea__callToAction div {
   width: 100%;
@@ -167,26 +179,14 @@ section #content__textArea__callToAction p {
   margin: 0;
   padding-left: 110px; }
 
-section .content__textArea__titleArea {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 15px; }
-
-section .content__textArea__titleArea__squareStyle svg {
-  width: 200px;
-  height: 200px;
-  position: absolute; }
-
-section .content__textArea__titleArea--title,
-section .content__textArea__titleArea--desc {
+section .left-area__textArea__titleArea--title,
+section .left-area__textArea__titleArea--desc {
   text-align: left; }
 
-section .content__textArea__titleArea--title {
+section .left-area__textArea__titleArea--title {
   width: 100%; }
 
-section .content__textArea__titleArea--title h2 {
+section .left-area__textArea__titleArea--title h2 {
   width: 368px;
   font-size: 6.4rem;
   padding-left: 77px;
@@ -195,16 +195,16 @@ section .content__textArea__titleArea--title h2 {
   color: white;
   margin: 0; }
 
-section .content__textArea__titleArea--desc {
+section .left-area__textArea__titleArea--desc {
   width: 460px; }
 
-section .content__textArea__titleArea--desc p {
+section .left-area__textArea__titleArea--desc p {
   font-size: 2rem;
   padding-left: 77px;
   color: white;
   margin-bottom: 80px; }
 
-section .content__textArea__titleArea--desc p span {
+section .left-area__textArea__titleArea--desc p span {
   font-weight: 700; }
 
 section .content__cardArea {
@@ -416,21 +416,21 @@ section#content--section03 #callToAction {
     width: 500px; }
   section #content__textArea__callToAction {
     margin-left: 50px; }
-  section .content__textArea__titleArea__squareStyle svg {
+  section .left-area__textArea__titleArea__squareStyle svg {
     width: 150px;
     height: 150px; }
-  section .content__textArea__titleArea--title h2 {
+  section .left-area__textArea__titleArea--title h2 {
     font-size: 4.8rem;
     padding-left: 50px;
     padding-top: 90px; }
-  section .content__textArea__titleArea--desc p {
+  section .left-area__textArea__titleArea--desc p {
     padding-left: 50px; }
   section .content__cardArea {
     flex-direction: row;
     height: auto; }
   section#content #callToAction {
     display: none; }
-  #content--banner {
+  section#content--banner {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -488,7 +488,7 @@ section#content--section03 #callToAction {
         color: #F89D24; } }
 
 @media only screen and (max-width: 1234px) {
-  #content {
+  section#content {
     flex-direction: column; }
   section .left-area--section01 {
     flex-direction: row;
@@ -518,7 +518,8 @@ section#content--section03 #callToAction {
 
 @media only screen and (max-width: 1024px) {
   main {
-    padding: 40px 25px; }
+    padding: 40px 25px;
+    height: 740px; }
   main .main__logo svg {
     width: 110px;
     height: 90px; }
@@ -529,14 +530,9 @@ section#content--section03 #callToAction {
     text-align: center;
     font-size: 2rem;
     color: #b5b5b5; }
-  #content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 40px 40px 40px;
-    background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
-  #content--banner {
+  section#content {
+    padding: 0 40px 40px 40px; }
+  section#content--banner {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -545,7 +541,7 @@ section#content--section03 #callToAction {
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat; }
-  #content--section03 {
+  section#content--section03 {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -553,7 +549,7 @@ section#content--section03 #callToAction {
     background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
   section .left-area {
     justify-content: flex-start; }
-  section .content__textArea {
+  section .left-area__textArea {
     display: flex;
     flex-direction: column; }
   section #content__textArea__callToAction {
@@ -576,32 +572,32 @@ section#content--section03 #callToAction {
     font-size: 1.6rem;
     padding-left: 0;
     margin: 0; }
-  section .content__textArea__titleArea {
+  section .left-area__textArea__titleArea {
     width: 100%;
     height: auto;
     display: flex;
     align-items: flex-start; }
-  section .content__textArea__titleArea__squareStyle svg {
+  section .left-area__textArea__titleArea__squareStyle svg {
     width: 150px;
     height: 150px;
     position: absolute; }
-  section .content__textArea__titleArea--title,
-  section .content__textArea__titleArea--desc {
+  section .left-area__textArea__titleArea--title,
+  section .left-area__textArea__titleArea--desc {
     text-align: left; }
-  section .content__textArea__titleArea--title h2 {
+  section .left-area__textArea__titleArea--title h2 {
     font-size: 4.8rem;
     padding-left: 50px;
     padding-top: 90px;
     font-weight: 400;
     color: white;
     margin: 0; }
-  section .content__textArea__titleArea--desc {
+  section .left-area__textArea__titleArea--desc {
     width: 460px; }
-  section .content__textArea__titleArea--desc p {
+  section .left-area__textArea__titleArea--desc p {
     font-size: 2rem;
     padding-left: 50px;
     color: white; }
-  section .content__textArea__titleArea--desc p span {
+  section .left-area__textArea__titleArea--desc p span {
     font-weight: 700; }
   section .content__cardArea {
     display: flex;
@@ -715,9 +711,14 @@ section#content--section03 #callToAction {
     margin: 0;
     color: #b5b5b5; } }
 
+@media only screen and (max-width: 820px) {
+  main {
+    height: 740px; } }
+
 @media only screen and (max-width: 768px) {
   main {
-    padding: 35px 20px; }
+    padding: 35px 20px;
+    height: 100vh; }
   main .main__logo svg {
     width: 69px;
     height: 56px; }
@@ -730,11 +731,7 @@ section#content--section03 #callToAction {
     font-size: 1.4rem; }
   main #callToAction {
     flex-direction: column; }
-  #content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; }
-  #content--banner {
+  section#content--banner {
     display: flex;
     width: 100%;
     background-image: url(../images/teacher.jpg);
@@ -743,24 +740,24 @@ section#content--section03 #callToAction {
     background-repeat: no-repeat;
     flex-direction: column;
     padding: 0 40px 60px 40px; }
-  section .content__textArea {
+  section .left-area__textArea {
     display: flex;
     flex-direction: column; }
   section #content__textArea__callToAction {
     display: none; }
-  section .content__textArea__titleArea__squareStyle svg {
+  section .left-area__textArea__titleArea__squareStyle svg {
     width: 105px;
     height: 100px; }
-  section .content__textArea__titleArea--title h2 {
+  section .left-area__textArea__titleArea--title h2 {
     width: 200px;
     font-size: 4.2rem;
     padding-top: 50px;
     padding-left: 8px;
     margin: 0; }
-  section .content__textArea__titleArea--desc {
+  section .left-area__textArea__titleArea--desc {
     width: 100%;
     margin-bottom: 30px; }
-  section .content__textArea__titleArea--desc p {
+  section .left-area__textArea__titleArea--desc p {
     font-size: 1.6rem;
     padding-left: 0;
     color: #b5b5b5;
