@@ -17,7 +17,7 @@
   height: 61px;
   background: #F89D24;
   border-radius: 5px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: 700; }
@@ -34,9 +34,10 @@
   position: relative;
   width: 225px;
   height: 61px;
-  border: 1px solid #FFFFFF;
+  background: none;
+  border: 1px solid #ffffff;
   border-radius: 5px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: 700; }
@@ -47,37 +48,31 @@
 /*BORDER*/
 :root {
   font-size: 62.5%;
-  font-family: "Yantramanav", "Arial", sans-serif; }
+  font-family: "Yantramanav", "Arial", sans-serif;
+  scroll-behavior: smooth; }
 
 * {
   box-sizing: border-box; }
 
 body {
   margin: 0;
-  padding: 0; }
-
-.container {
+  padding: 0;
   width: 100%;
-  height: 100vh;
-  padding: 25px 120px;
+  height: auto;
   background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
 
-.container--section {
-  height: auto;
-  padding: 0 120px 100px 120px; }
+.container {
+  margin: auto;
+  max-width: 1440px;
+  max-height: 840px;
+  padding: 25px 120px; }
 
 main {
-  min-height: 740px; }
+  min-height: 100vh; }
   main > div[class*="title"] {
     display: flex;
     align-items: center;
     justify-content: center; }
-  main .main__logo {
-    width: 110px;
-    height: 90px; }
-    main .main__logo svg {
-      width: 100%;
-      height: auto; }
   main > .main__title {
     margin-top: 125px;
     text-align: center;
@@ -104,39 +99,153 @@ main {
     width: 100%;
     gap: 30px;
     margin: 65px 0 20px 0; }
+    main #callToAction a {
+      text-decoration: none; }
+      main #callToAction a :hover {
+        background: #FFA700; }
 
-section .container--section01 {
+section.section__container {
+  margin: auto;
+  max-width: 1440px;
+  max-height: 840px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 0 120px 100px 120px; }
+  section.section__container .section__container__leftArea--section01 {
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+    section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea {
+      width: 100%;
+      padding: 0 50px 0 70px;
+      display: flex;
+      flex-direction: column;
+      color: white; }
+    section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--title,
+    section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--desc {
+      max-width: 368px;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      text-align: left;
+      margin-bottom: 15px; }
+    section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--title h2 {
+      font-size: 6.4rem;
+      padding-top: 120px;
+      font-weight: 400;
+      margin: 0; }
+    section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--desc p {
+      font-size: 2rem; }
+    section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--desc p span {
+      font-weight: 700; }
+    section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 0;
+      margin-top: 0;
+      padding: 0 50px 0 70px; }
+    section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction div {
+      width: 100%; }
+    section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction p {
+      color: white;
+      font-size: 1.6rem;
+      margin: 0;
+      text-align: end;
+      padding-right: 66px; }
+    section.section__container .section__container__leftArea--section01 .section__container__leftArea__section01__callToAction__buttonArea {
+      display: flex;
+      flex-direction: row;
+      gap: 30px; }
+      section.section__container .section__container__leftArea--section01 .section__container__leftArea__section01__callToAction__buttonArea a {
+        text-decoration: none;
+        width: 100%; }
+        section.section__container .section__container__leftArea--section01 .section__container__leftArea__section01__callToAction__buttonArea a :hover {
+          background: #FFA700; }
+  section.section__container .section__container__rightArea__cardArea {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 545px;
+    height: 660px;
+    gap: 30px; }
+    section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card {
+      width: 258px;
+      height: 255px;
+      border: 1px solid #6E6E6E; }
+    section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card__image {
+      display: inline-flex;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      padding: 20px; }
+      section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card__image img.section__container__rightArea__cardArea__card__image--section01 {
+        width: 98px;
+        height: 96px; }
+    section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card__textArea {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      font-size: 1.6rem;
+      font-weight: 700; }
+    section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card__textArea--title h5 {
+      text-transform: uppercase;
+      margin: 0;
+      color: #F89D24; }
+    section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card__textArea--desc p {
+      margin: 0;
+      color: #b5b5b5; }
+  section.section__container #callToAction {
+    display: none; }
 
-section .left-area--section01 {
+section.valueArea {
   display: flex;
-  flex-direction: column; }
-
-section .left-area__textArea {
-  display: flex;
-  flex-direction: column; }
-
-section .left-area__textArea__titleArea__squareStyle svg {
-  position: absolute; }
-
-section .left-area__textArea__titleArea {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
   width: 100%;
   height: auto;
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 15px; }
-
-section .left-area__textArea__callToAction__buttonArea {
-  display: flex;
-  flex-direction: row;
-  gap: 30px; }
-
-section#content {
-  display: flex;
-  flex-direction: row;
-  padding: 0 120px 100px 120px; }
+  background-image: url(../images/HexagonosBackground.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 0 0 120px; }
+  section.valueArea .valueArea__textArea h3 {
+    max-width: 706px;
+    font-size: 4.8rem;
+    font-weight: 400;
+    color: white;
+    padding: 66px 40px;
+    line-height: 52.5px; }
+  section.valueArea .valueArea__callToAction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 660px;
+    height: auto;
+    background-color: #F89D24;
+    padding: 60px 28px;
+    margin-block: 40px; }
+    section.valueArea .valueArea__callToAction a {
+      text-decoration: none; }
+      section.valueArea .valueArea__callToAction a :hover {
+        background: #FF6A00;
+        color: white; }
+  section.valueArea .valueArea__callToAction p {
+    width: 368px;
+    color: white;
+    font-size: 6.4rem;
+    margin: 0 0 25px 0; }
+  section.valueArea .valueArea__callToAction .full {
+    color: #F89D24;
+    background: white; }
 
 section#content--banner {
   display: flex;
@@ -154,144 +263,6 @@ section#content--section03 {
   width: 100%;
   padding: 0 120px 100px 120px;
   background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
-
-section #left-area__textArea__callToAction {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  gap: 0;
-  margin-top: 0;
-  margin-left: 77px; }
-
-section #content__textArea__callToAction div {
-  width: 100%;
-  text-align: center;
-  padding-bottom: 10px; }
-
-section #content__textArea__callToAction .outline {
-  margin-bottom: 30px; }
-
-section #content__textArea__callToAction p {
-  color: white;
-  font-size: 1.6rem;
-  margin: 0;
-  padding-left: 110px; }
-
-section .left-area__textArea__titleArea--title,
-section .left-area__textArea__titleArea--desc {
-  text-align: left; }
-
-section .left-area__textArea__titleArea--title {
-  width: 100%; }
-
-section .left-area__textArea__titleArea--title h2 {
-  width: 368px;
-  font-size: 6.4rem;
-  padding-left: 77px;
-  padding-top: 120px;
-  font-weight: 400;
-  color: white;
-  margin: 0; }
-
-section .left-area__textArea__titleArea--desc {
-  width: 460px; }
-
-section .left-area__textArea__titleArea--desc p {
-  font-size: 2rem;
-  padding-left: 77px;
-  color: white;
-  margin-bottom: 80px; }
-
-section .left-area__textArea__titleArea--desc p span {
-  font-weight: 700; }
-
-section .content__cardArea {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 545px;
-  height: 660px;
-  gap: 18px; }
-
-section .content__cardArea__card {
-  width: 258px;
-  height: 255px;
-  border: 1px solid #6E6E6E; }
-
-section .content__card__photo {
-  display: inline-flex;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  padding: 20px; }
-  section .content__card__photo img.content__card__photo--section01 {
-    width: 98px;
-    height: 96px; }
-
-section .content__card__textArea {
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  font-size: 1.6rem;
-  font-weight: 700; }
-
-section .content__card__textArea-title h5 {
-  text-transform: uppercase;
-  margin: 0;
-  color: #F89D24; }
-
-section .content__card__textArea-desc p {
-  margin: 0;
-  color: #b5b5b5; }
-
-section#content #callToAction {
-  display: none; }
-
-section.valueArea {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  width: 100%;
-  height: auto;
-  background-image: url(../images/HexagonosBackground.svg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 0 0 0 120px; }
-
-section .valueArea__slogan h5 {
-  max-width: 706px;
-  font-size: 4.8rem;
-  font-weight: 400;
-  color: white;
-  padding: 66px 40px;
-  line-height: 52.5px; }
-
-section .valueArea__valueButton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 660px;
-  height: auto;
-  background-color: #F89D24;
-  padding: 76px 28px;
-  margin-block: 40px; }
-
-section .valueArea__valueButton p {
-  width: 368px;
-  color: white;
-  font-size: 6.4rem;
-  margin: 0 0 25px 0; }
-
-section .valueArea__valueButton .full {
-  color: #F89D24;
-  background: white; }
 
 section#content--banner .left-area {
   display: none; }
@@ -397,250 +368,44 @@ section#content--section03 #callToAction {
   padding: 60px 0 80px 0;
   gap: 30px; }
 
-@media only screen and (max-width: 1440px) {
-  main {
-    padding: 25px 120px; }
-  main .main__logo svg {
-    width: 110px;
-    height: 90px; }
-  main > .main__title {
-    margin-top: 100px; }
-  main .main__title h1 {
-    font-size: 4.8rem; }
-  main .main__sub-title {
-    height: auto;
-    text-align: center;
-    font-size: 2rem;
-    color: #b5b5b5; }
-  section .valueArea__valueButton {
-    width: 500px; }
-  section #content__textArea__callToAction {
-    margin-left: 50px; }
-  section .left-area__textArea__titleArea__squareStyle svg {
-    width: 150px;
-    height: 150px; }
-  section .left-area__textArea__titleArea--title h2 {
-    font-size: 4.8rem;
-    padding-left: 50px;
-    padding-top: 90px; }
-  section .left-area__textArea__titleArea--desc p {
-    padding-left: 50px; }
-  section .content__cardArea {
-    flex-direction: row;
-    height: auto; }
-  section#content #callToAction {
-    display: none; }
-  section#content--banner {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 60px 40px;
-    background-image: url(../images/teacher.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat; }
-  section#content--banner .left-area--section01 {
-    display: none; }
-  section .content--banner__competences-cards {
-    display: flex;
-    flex-direction: column;
-    height: auto; }
-  section .content--banner__competences-card-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 230px;
-    height: auto;
-    background-color: #686868;
-    padding: 40px 14px 15px 20px; }
-  section .content--banner__competences-card-title h6 {
-    font-size: 3.2rem;
-    font-weight: 400;
-    color: white;
-    margin: 0; }
-  section .content--banner__competences-card-title svg {
-    display: none; }
-  section .content--banner__competences-card-desc--mobile {
-    display: none; }
-  section .content--banner__competences-card-desc--desktop {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 65px 54px 0 54px;
-    background-color: #262626;
-    visibility: visible; }
-  section .content--banner__competences-card-desc--desktop p {
-    color: white;
-    font-size: 2rem;
-    font-weight: 100;
-    margin: 0 0 15px 0; }
-  section .content--banner__competences-card-desc--desktop__linksArea {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    font-size: 2rem; }
-    section .content--banner__competences-card-desc--desktop__linksArea a {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: white; }
-      section .content--banner__competences-card-desc--desktop__linksArea a span {
-        color: #F89D24; } }
-
 @media only screen and (max-width: 1234px) {
-  section#content {
-    flex-direction: column; }
-  section .left-area--section01 {
-    flex-direction: row;
-    justify-content: space-around; }
-  section #content__textArea__callToAction {
-    display: flex;
+  section.section__container {
+    max-height: max-content;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 190px;
-    gap: 0;
-    margin-top: 0;
-    margin-left: 50px; }
-  section #content__textArea__callToAction div {
-    flex-direction: column;
-    width: 100%;
-    text-align: left; }
-  section #content__textArea__callToAction .outline {
-    margin-bottom: 0; }
-  section #content__textArea__callToAction p {
-    color: white;
-    font-size: 1.6rem;
-    padding-left: 0;
-    margin: 0; }
-  section .content__cardArea {
-    align-self: center; } }
+    padding: 0 120px 100px 120px; }
+    section.section__container .section__container__leftArea--section01 {
+      max-width: 100%;
+      flex-direction: row; }
+      section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--desc {
+        max-width: 415px; }
+      section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction {
+        width: 428px;
+        padding: 0 0px 0 100px; }
+      section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction p {
+        text-align: start;
+        padding-right: 0;
+        margin-bottom: 10px; }
+      section.section__container .section__container__leftArea--section01 .section__container__leftArea__section01__callToAction__buttonArea {
+        flex-direction: column; }
+    section.section__container .section__container__rightArea__cardArea {
+      align-self: center; } }
 
 @media only screen and (max-width: 1024px) {
-  main {
-    padding: 40px 25px;
-    height: 740px; }
-  main .main__logo svg {
-    width: 110px;
-    height: 90px; }
-  main .main__title h1 {
-    font-size: 4.8rem; }
-  main .main__sub-title {
-    height: auto;
-    text-align: center;
-    font-size: 2rem;
-    color: #b5b5b5; }
-  section#content {
-    padding: 0 40px 40px 40px; }
-  section#content--banner {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 60px 40px;
-    background-image: url(../images/teacher.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat; }
-  section#content--section03 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 60px 40px;
-    background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
-  section .left-area {
-    justify-content: flex-start; }
-  section .left-area__textArea {
-    display: flex;
-    flex-direction: column; }
-  section #content__textArea__callToAction {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 190px;
-    gap: 0;
-    margin-top: 0;
-    margin-left: 50px; }
-  section #content__textArea__callToAction div {
-    flex-direction: column;
-    width: 100%;
-    text-align: left; }
-  section #content__textArea__callToAction .outline {
-    margin-bottom: 0; }
-  section #content__textArea__callToAction p {
-    color: white;
-    font-size: 1.6rem;
-    padding-left: 0;
-    margin: 0; }
-  section .left-area__textArea__titleArea {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: flex-start; }
-  section .left-area__textArea__titleArea__squareStyle svg {
-    width: 150px;
-    height: 150px;
-    position: absolute; }
-  section .left-area__textArea__titleArea--title,
-  section .left-area__textArea__titleArea--desc {
-    text-align: left; }
-  section .left-area__textArea__titleArea--title h2 {
-    font-size: 4.8rem;
-    padding-left: 50px;
-    padding-top: 90px;
-    font-weight: 400;
-    color: white;
-    margin: 0; }
-  section .left-area__textArea__titleArea--desc {
-    width: 460px; }
-  section .left-area__textArea__titleArea--desc p {
-    font-size: 2rem;
-    padding-left: 50px;
-    color: white; }
-  section .left-area__textArea__titleArea--desc p span {
-    font-weight: 700; }
-  section .content__cardArea {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 678px;
-    height: auto;
-    gap: 18px; }
-  section .content__cardArea__card {
-    width: 258px;
-    height: 255px;
-    border: 1px solid #6E6E6E; }
-  section .content__card__photo {
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    padding-block: 20px; }
-  section .content__card__textArea {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    font-size: 1.6rem;
-    font-weight: 700; }
-  section .content__card__textArea-title h5 {
-    text-transform: uppercase;
-    margin: 0;
-    color: #F89D24; }
-  section .content__card__textArea-desc p {
-    margin: 0;
-    color: #b5b5b5; }
-  section#content #callToAction {
-    display: none; }
+  .container {
+    padding: 25px 40px; }
+  section.section__container {
+    padding: 0 40px 80px 40px; }
+    section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction {
+      width: 238px;
+      padding: 0; }
   section.valueArea {
     padding: 0; }
-  section .valueArea__valueButton {
+  section .valueArea__callToAction {
     width: 300px; }
-  section .valueArea__valueButton p {
+  section .valueArea__callToAction p {
     width: 300px;
     font-size: 4.8rem; }
-  section .valueArea__valueButton .full {
+  section .valueArea__callToAction .full {
     width: 200px; }
   section#content--banner .left-area {
     display: none; }
@@ -716,21 +481,9 @@ section#content--section03 #callToAction {
     height: 740px; } }
 
 @media only screen and (max-width: 768px) {
-  main {
-    padding: 35px 20px;
-    height: 100vh; }
   main .main__logo svg {
-    width: 69px;
+    width: 68px;
     height: 56px; }
-  main > .main__title {
-    margin-top: 0; }
-  main .main__title h1 {
-    margin: 0 0 20px 0;
-    font-size: 4.8rem; }
-  main .main__sub-title {
-    font-size: 1.4rem; }
-  main #callToAction {
-    flex-direction: column; }
   section#content--banner {
     display: flex;
     width: 100%;
@@ -740,83 +493,27 @@ section#content--section03 #callToAction {
     background-repeat: no-repeat;
     flex-direction: column;
     padding: 0 40px 60px 40px; }
-  section .left-area__textArea {
-    display: flex;
-    flex-direction: column; }
-  section #content__textArea__callToAction {
-    display: none; }
-  section .left-area__textArea__titleArea__squareStyle svg {
-    width: 105px;
-    height: 100px; }
-  section .left-area__textArea__titleArea--title h2 {
-    width: 200px;
-    font-size: 4.2rem;
-    padding-top: 50px;
-    padding-left: 8px;
-    margin: 0; }
-  section .left-area__textArea__titleArea--desc {
-    width: 100%;
-    margin-bottom: 30px; }
-  section .left-area__textArea__titleArea--desc p {
-    font-size: 1.6rem;
-    padding-left: 0;
-    color: #b5b5b5;
-    margin: 0; }
-  section#content #callToAction,
-  section#content--banner #callToAction {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35px;
-    width: 100%;
-    gap: 30px; }
-  section .content__cardArea {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    gap: 30px; }
-  section .content__cardArea__card {
-    width: 100%;
-    max-width: 258px;
-    height: auto;
-    border: 1px solid #6E6E6E; }
-  section .content__card__photo {
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    padding-block: 20px; }
-  section .content__card__textArea {
-    width: 100%;
-    height: auto;
-    padding: 0 20px 20px 20px;
-    font-size: 1.6rem;
-    font-weight: 700; }
-  section .content__card__textArea-title h5 {
-    text-transform: uppercase;
-    margin: 0;
-    color: #F89D24; }
-  section .content__card__textArea-desc p {
-    margin: 0;
-    color: #b5b5b5; }
+  .container {
+    padding: 25px 40px; }
+  section.section__container {
+    padding: 0 40px 80px 40px; }
+    section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction {
+      width: 238px;
+      padding: 0; }
   section.valueArea {
     flex-direction: column; }
-  section .valueArea__slogan {
+  section .valueArea__textArea {
     width: 100%;
     height: auto;
     background-image: url(../images/HexagonosBackground.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
-  section .valueArea__slogan h5 {
+  section .valueArea__textArea h5 {
     font-size: 4rem;
     margin: 0;
     padding: 35px 25px; }
-  section .valueArea__valueButton {
+  section .valueArea__callToAction {
     width: 100%;
     height: auto;
     padding: 35px 64px;
@@ -887,7 +584,69 @@ section#content--section03 #callToAction {
 .content__cardArea__card--section03:nth-last-child(-n + 2) {
     display: none; } }
 
-@media only screen and (max-width: 380px) {
-  section .content__cardArea__card--section03 {
-    width: 100%;
-    height: auto; } }
+@media only screen and (max-width: 600px) {
+  main {
+    height: 840px;
+    max-height: 920px; }
+    main > .main__title {
+      margin-top: 20px; }
+      main > .main__title h1 {
+        font-size: 4.8rem; }
+    main .main__sub-title {
+      font-size: 1.4rem;
+      color: #b5b5b5; }
+    main #callToAction {
+      flex-direction: column; }
+  section.section__container {
+    max-height: max-content;
+    flex-direction: column; }
+    section.section__container .section__container__leftArea--section01 {
+      max-width: 100%;
+      flex-direction: row; }
+      section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea {
+        padding: 0 0 0 10px; }
+      section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--desc {
+        max-width: 100%; }
+      section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction {
+        display: none; }
+    section.section__container .section__container__rightArea__cardArea {
+      flex-direction: row;
+      align-self: center;
+      height: auto;
+      width: 100%; }
+      section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card {
+        max-width: 258px;
+        width: 100%;
+        height: auto; }
+    section.section__container #callToAction {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-block: 35px;
+      gap: 30px; }
+      section.section__container #callToAction a {
+        text-decoration: none; }
+        section.section__container #callToAction a :hover {
+          background: #FFA700; } }
+
+@media only screen and (max-width: 300px) {
+  .container {
+    padding: 25px 15px; }
+  main > .main__title h1 {
+    font-size: 3.2rem; }
+  section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--title h2 {
+    font-size: 4.8rem;
+    padding-top: 140px;
+    font-weight: 400;
+    margin: 0; }
+  section.section__container #callToAction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 35px;
+    gap: 30px; }
+    section.section__container #callToAction .outline,
+    section.section__container #callToAction .full {
+      width: 165px; } }
