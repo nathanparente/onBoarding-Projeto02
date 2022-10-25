@@ -28,6 +28,7 @@ body {
   max-height: 840px;
   padding: 25px 120px;
 }
+//MAIN ////////////////////////////////////////////////////
 main {
   min-height: 100vh;
 
@@ -227,6 +228,7 @@ section.valueArea {
     font-size: $title-h2;
     font-weight: 400;
     color: white;
+    margin: 0;
     padding: 66px 40px;
     line-height: 52.5px;
   }
@@ -248,12 +250,12 @@ section.valueArea {
         color: white;
       }
     }
-  }
-  .valueArea__callToAction p {
-    width: 368px;
-    color: white;
-    font-size: $title-h1;
-    margin: 0 0 25px 0;
+    p {
+      width: 368px;
+      color: white;
+      font-size: $title-h1;
+      margin: 0 0 25px 0;
+    }
   }
   .valueArea__callToAction .full {
     color: $main-color;
@@ -395,6 +397,7 @@ section#content--section03 #callToAction {
   gap: 30px;
 }
 @media only screen and (max-width: 1234px) {
+  //SECTION 01 ////////////////////////////////////////////////////
   section.section__container {
     max-height: max-content;
     flex-direction: column;
@@ -432,6 +435,7 @@ section#content--section03 #callToAction {
   .container {
     padding: 25px 40px;
   }
+  //SECTION 01 ////////////////////////////////////////////////////
   section.section__container {
     padding: 0 40px 80px 40px;
 
@@ -443,20 +447,22 @@ section#content--section03 #callToAction {
       }
     }
   }
-
+  //BANNER-AREA ////////////////////////////////////////////////////
   section.valueArea {
     padding: 0;
+
+    .valueArea__callToAction {
+      width: 300px;
+      p {
+        width: 300px;
+        font-size: $title-h2;
+      }
+    }
+    .valueArea__callToAction .full {
+      width: 200px;
+    }
   }
-  section .valueArea__callToAction {
-    width: 300px;
-  }
-  section .valueArea__callToAction p {
-    width: 300px;
-    font-size: $title-h2;
-  }
-  section .valueArea__callToAction .full {
-    width: 200px;
-  }
+
   section#content--banner .left-area {
     display: none;
   }
@@ -548,11 +554,16 @@ section#content--section03 #callToAction {
   }
 }
 @media only screen and (max-width: 820px) {
+  //MAIN ////////////////////////////////////////////////////
   main {
     height: 740px;
   }
 }
 @media only screen and (max-width: 768px) {
+  .container {
+    padding: 25px 40px;
+  }
+  //MAIN ////////////////////////////////////////////////////
   main {
     .main__logo svg {
       width: 68px;
@@ -571,9 +582,7 @@ section#content--section03 #callToAction {
     flex-direction: column;
     padding: 0 40px 60px 40px;
   }
-  .container {
-    padding: 25px 40px;
-  }
+  //SECTION 01 ////////////////////////////////////////////////////
   section.section__container {
     padding: 0 40px 80px 40px;
 
@@ -585,35 +594,30 @@ section#content--section03 #callToAction {
       }
     }
   }
+  //BANNER-AREA ////////////////////////////////////////////////////
   section.valueArea {
     flex-direction: column;
-  }
-  section .valueArea__textArea {
-    width: 100%;
-    height: auto;
-    background-image: url(../images/HexagonosBackground.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  section .valueArea__textArea h5 {
-    font-size: 4rem;
-    margin: 0;
-    padding: 35px 25px;
-  }
-  section .valueArea__callToAction {
-    width: 100%;
-    height: auto;
-    padding: 35px 64px;
-    margin-block: 0;
-  }
-  section .valueArea__valueButton p {
-    padding: 35px 25px;
-    margin: 0;
-  }
-  section .valueArea__valueButton .full {
-    color: $main-color;
-    background: white;
+
+    .valueArea__textArea h3 {
+      width: 100%;
+      font-size: $title-h2;
+      margin: 0;
+      padding: 35px 25px;
+    }
+    .valueArea__callToAction {
+      width: 100%;
+      height: auto;
+      padding: 35px 64px;
+      margin-block: 0;
+      p {
+        font-size: $title-h2;
+      }
+    }
+
+    .valueArea__valueButton p {
+      padding: 35px 25px;
+      margin: 0;
+    }
   }
   section#content--banner .left-area {
     display: flex;
@@ -691,6 +695,7 @@ section#content--section03 #callToAction {
   }
 }
 @media only screen and (max-width: 600px) {
+  //MAIN ////////////////////////////////////////////////////
   main {
     height: 840px;
     max-height: 920px;
@@ -710,6 +715,7 @@ section#content--section03 #callToAction {
       flex-direction: column;
     }
   }
+  //SECTION 01 ////////////////////////////////////////////////////
   section.section__container {
     max-height: max-content;
     flex-direction: column;
@@ -766,6 +772,7 @@ section#content--section03 #callToAction {
   .container {
     padding: 25px 15px;
   }
+  //MAIN ////////////////////////////////////////////////////
   main {
     > .main__title {
       h1 {
@@ -773,6 +780,7 @@ section#content--section03 #callToAction {
       }
     }
   }
+  //SECTION 01 ////////////////////////////////////////////////////
   section.section__container {
     .section__container__leftArea--section01 {
       .section__container__leftArea__textArea--title h2 {
