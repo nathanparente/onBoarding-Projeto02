@@ -262,17 +262,144 @@ section.valueArea {
     background: white;
   }
 }
-
-section#content--banner {
+//SECTION 02 ////////////////////////////////////////////////////
+section.section--competences__container {
+  margin: auto;
+  max-width: 1440px;
+  max-height: 840px;
   display: flex;
   flex-direction: row;
-  width: 100%;
   padding: 116px 145px 116px 160px;
   background-image: url(../images/teacher.jpg);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
   //background-attachment: fixed;
+
+  .left-area {
+    display: none;
+  }
+  .section--competences__cardsArea {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    .section--competences__cardsArea__accordions {
+      display: flex;
+      flex-direction: column;
+      .section--competences__cardsArea__accordions__item {
+        display: flex;
+        input {
+          display: none;
+        }
+        .section--competences__cardsArea__card--title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 460px;
+          max-height: 50px;
+          height: auto;
+          background-color: $background-secondary-color;
+          padding: 40px;
+          label {
+            font-size: $title-h3;
+            font-weight: 400;
+            color: white;
+            margin: 0;
+          }
+          svg {
+            display: none;
+          }
+        }
+        .section--competences__cardsArea__card-desc--desktop {
+          visibility: hidden;
+          position: absolute;
+          left: 650px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          flex: 1;
+          padding: 65px 54px 0 54px;
+          background-color: $background-main-color;
+          p {
+            color: white;
+            font-size: 2rem;
+            font-weight: 100;
+            margin: 0 0 15px 0;
+            max-width: 350px;
+          }
+          .section--competences__cardsArea__card-desc--desktop__linksArea {
+            max-width: 350px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+            font-size: 2rem;
+            margin-bottom: 60px;
+
+            a {
+              text-decoration: none;
+              text-transform: uppercase;
+              color: white;
+
+              span {
+                color: $main-color;
+              }
+            }
+          }
+        }
+
+        [id^="accordion"]:checked
+          ~ .section--competences__cardsArea__card-desc--desktop {
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  .section--competences__cardsArea__card--desc--mobile {
+    display: none; //DISPLAY NONE ATÉ SER ATIVIDADO PELO EVENTO DE CLICK
+  }
+  /*
+  .section--competences__cardsArea__card-desc--desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    padding: 65px 54px 0 54px;
+    background-color: $background-main-color;
+    visibility: visible;
+    p {
+      color: white;
+      font-size: 2rem;
+      font-weight: 100;
+      margin: 0 0 15px 0;
+      max-width: 350px;
+    }
+  }
+  .section--competences__cardsArea__card-desc--desktop__linksArea {
+    max-width: 350px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: 2rem;
+    margin-bottom: 60px;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+
+      span {
+        color: $main-color;
+      }
+    }
+  }
+  */
+  .section--competences__cardsArea #callToAction {
+    display: none;
+  }
 }
 section#content--section03 {
   display: flex;
@@ -286,73 +413,6 @@ section#content--section03 {
   );
 }
 
-section#content--banner .left-area {
-  display: none;
-}
-section .content--banner__competences-cards {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-section .content--banner__competences-card-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 460px;
-  height: auto;
-  background-color: $background-secondary-color;
-  padding: 40px 14px 15px 20px;
-}
-section .content--banner__competences-card-title h6 {
-  font-size: $title-h3;
-  font-weight: 400;
-  color: white;
-  margin: 0;
-}
-section .content--banner__competences-card-title svg {
-  display: none;
-}
-section .content--banner__competences-card-desc--mobile {
-  display: none; //DISPLAY NONE ATÉ SER ATIVIDADO PELO EVENTO DE CLICK
-}
-section .content--banner__competences-card-desc--desktop {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  flex: 1;
-  padding: 65px 54px 0 54px;
-  background-color: $background-main-color;
-  visibility: visible;
-}
-section .content--banner__competences-card-desc--desktop p {
-  color: white;
-  font-size: 2rem;
-  font-weight: 100;
-  margin: 0 0 15px 0;
-  max-width: 350px;
-}
-section .content--banner__competences-card-desc--desktop__linksArea {
-  max-width: 350px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
-  font-size: 2rem;
-  margin-bottom: 60px;
-
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-
-    span {
-      color: $main-color;
-    }
-  }
-}
-section#content--banner #callToAction {
-  display: none;
-}
 section .content__cardArea {
   display: flex;
   flex-direction: row;

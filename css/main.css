@@ -248,15 +248,120 @@ section.valueArea {
     color: #F89D24;
     background: white; }
 
-section#content--banner {
+section.section--competences__container {
+  margin: auto;
+  max-width: 1440px;
+  max-height: 840px;
   display: flex;
   flex-direction: row;
-  width: 100%;
   padding: 116px 145px 116px 160px;
   background-image: url(../images/teacher.jpg);
   background-size: cover;
   background-position: left;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  /*
+  .section--competences__cardsArea__card-desc--desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    padding: 65px 54px 0 54px;
+    background-color: $background-main-color;
+    visibility: visible;
+    p {
+      color: white;
+      font-size: 2rem;
+      font-weight: 100;
+      margin: 0 0 15px 0;
+      max-width: 350px;
+    }
+  }
+  .section--competences__cardsArea__card-desc--desktop__linksArea {
+    max-width: 350px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: 2rem;
+    margin-bottom: 60px;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+
+      span {
+        color: $main-color;
+      }
+    }
+  }
+  */ }
+  section.section--competences__container .left-area {
+    display: none; }
+  section.section--competences__container .section--competences__cardsArea {
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+    section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions {
+      display: flex;
+      flex-direction: column; }
+      section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item {
+        display: flex; }
+        section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item input {
+          display: none; }
+        section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card--title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 460px;
+          max-height: 50px;
+          height: auto;
+          background-color: #686868;
+          padding: 40px; }
+          section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card--title label {
+            font-size: 3.2rem;
+            font-weight: 400;
+            color: white;
+            margin: 0; }
+          section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card--title svg {
+            display: none; }
+        section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop {
+          visibility: hidden;
+          position: absolute;
+          left: 650px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          flex: 1;
+          padding: 65px 54px 0 54px;
+          background-color: #262626; }
+          section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop p {
+            color: white;
+            font-size: 2rem;
+            font-weight: 100;
+            margin: 0 0 15px 0;
+            max-width: 350px; }
+          section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop .section--competences__cardsArea__card-desc--desktop__linksArea {
+            max-width: 350px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+            font-size: 2rem;
+            margin-bottom: 60px; }
+            section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop .section--competences__cardsArea__card-desc--desktop__linksArea a {
+              text-decoration: none;
+              text-transform: uppercase;
+              color: white; }
+              section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop .section--competences__cardsArea__card-desc--desktop__linksArea a span {
+                color: #F89D24; }
+        section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item [id^="accordion"]:checked
+~ .section--competences__cardsArea__card-desc--desktop {
+          visibility: visible; }
+  section.section--competences__container .section--competences__cardsArea__card--desc--mobile {
+    display: none; }
+  section.section--competences__container .section--competences__cardsArea #callToAction {
+    display: none; }
 
 section#content--section03 {
   display: flex;
@@ -264,69 +369,6 @@ section#content--section03 {
   width: 100%;
   padding: 0 120px 100px 120px;
   background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
-
-section#content--banner .left-area {
-  display: none; }
-
-section .content--banner__competences-cards {
-  display: flex;
-  flex-direction: column;
-  height: auto; }
-
-section .content--banner__competences-card-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 460px;
-  height: auto;
-  background-color: #686868;
-  padding: 40px 14px 15px 20px; }
-
-section .content--banner__competences-card-title h6 {
-  font-size: 3.2rem;
-  font-weight: 400;
-  color: white;
-  margin: 0; }
-
-section .content--banner__competences-card-title svg {
-  display: none; }
-
-section .content--banner__competences-card-desc--mobile {
-  display: none; }
-
-section .content--banner__competences-card-desc--desktop {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  flex: 1;
-  padding: 65px 54px 0 54px;
-  background-color: #262626;
-  visibility: visible; }
-
-section .content--banner__competences-card-desc--desktop p {
-  color: white;
-  font-size: 2rem;
-  font-weight: 100;
-  margin: 0 0 15px 0;
-  max-width: 350px; }
-
-section .content--banner__competences-card-desc--desktop__linksArea {
-  max-width: 350px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
-  font-size: 2rem;
-  margin-bottom: 60px; }
-  section .content--banner__competences-card-desc--desktop__linksArea a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white; }
-    section .content--banner__competences-card-desc--desktop__linksArea a span {
-      color: #F89D24; }
-
-section#content--banner #callToAction {
-  display: none; }
 
 section .content__cardArea {
   display: flex;
