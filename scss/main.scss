@@ -264,19 +264,16 @@ section.valueArea {
 }
 //SECTION 02 ////////////////////////////////////////////////////
 section.section--competences__container {
-  margin: auto;
-  max-width: 1440px;
-  max-height: 840px;
-  display: flex;
-  flex-direction: row;
-  padding: 116px 145px 116px 160px;
-  background-image: url(../images/teacher.jpg);
+  padding: 116px 0;
+  background-image: url(../images/teacherBig.jpg);
   background-size: cover;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
-  position: relative;
   //background-attachment: fixed;
 
+  .section__container {
+    position: relative;
+  }
   .left-area {
     display: none;
   }
@@ -290,39 +287,53 @@ section.section--competences__container {
       flex-direction: column;
       .section--competences__cardsArea__accordions__item {
         display: flex;
+        flex-direction: column;
         input {
           display: none;
         }
         .section--competences__cardsArea__card--title {
           display: flex;
-          justify-content: center;
+          flex-direction: column;
+          justify-content: space-around;
           align-items: center;
           width: 460px;
           max-height: 50px;
           height: auto;
           background-color: $background-secondary-color;
-          padding: 50px;
-          label {
-            font-size: $title-h3;
-            font-weight: 400;
-            color: white;
-            margin: 0;
+          padding: 60px 15px 40px 15px;
+          .section--competences__cardsArea__card--title__text {
+            display: flex;
+            margin-bottom: 5px;
+            label {
+              font-size: $title-h3;
+              font-weight: 400;
+              color: white;
+              margin: 0;
+              cursor: pointer;
+            }
+            svg {
+              display: none;
+            }
           }
-          svg {
-            display: none;
+          div.section--competences__cardsArea__card--title__line {
+            visibility: hidden;
+            align-self: flex-end;
+            width: 75%;
+            height: 2px;
+            background-color: $main-color;
           }
         }
+
         .section--competences__cardsArea__card-desc--desktop {
           visibility: hidden;
+          width: 50%;
           position: absolute;
-          left: 620px;
-          top: 118px;
+          left: 580px;
+          top: 1px;
           display: flex;
           flex-direction: column;
-          justify-content: space-around;
           align-items: center;
-          flex: 1;
-          padding: 62px 54px 0 54px;
+          padding-top: 63px;
           background-color: $background-main-color;
           p {
             color: white;
@@ -355,6 +366,12 @@ section.section--competences__container {
           ~ .section--competences__cardsArea__card-desc--desktop {
           visibility: visible;
         }
+        /*
+        [id^="accordion"]:checked
+          >.section--competences__cardsArea__card-desc--desktop {
+          visibility: visible;
+        }
+        */
       }
     }
   }
@@ -362,43 +379,6 @@ section.section--competences__container {
   .section--competences__cardsArea__card--desc--mobile {
     display: none; //DISPLAY NONE ATÉ SER ATIVIDADO PELO EVENTO DE CLICK
   }
-  /*
-  .section--competences__cardsArea__card-desc--desktop {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex: 1;
-    padding: 65px 54px 0 54px;
-    background-color: $background-main-color;
-    visibility: visible;
-    p {
-      color: white;
-      font-size: 2rem;
-      font-weight: 100;
-      margin: 0 0 15px 0;
-      max-width: 350px;
-    }
-  }
-  .section--competences__cardsArea__card-desc--desktop__linksArea {
-    max-width: 350px;
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    font-size: 2rem;
-    margin-bottom: 60px;
-
-    a {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: white;
-
-      span {
-        color: $main-color;
-      }
-    }
-  }
-  */
   .section--competences__cardsArea #callToAction {
     display: none;
   }
@@ -458,6 +438,23 @@ section#content--section03 #callToAction {
   padding: 60px 0 80px 0;
   gap: 30px;
 }
+@media only screen and (max-width: 1400px) {
+  //SECTION 02 ////////////////////////////////////////////////////
+  section.section--competences__container {
+    .section--competences__cardsArea {
+      .section--competences__cardsArea__accordions {
+        .section--competences__cardsArea__accordions__item {
+          .section--competences__cardsArea__card--title {
+            width: 420px;
+          }
+          .section--competences__cardsArea__card-desc--desktop {
+            left: 540px;
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 1234px) {
   //SECTION 01 ////////////////////////////////////////////////////
   section.section__container {
@@ -492,6 +489,21 @@ section#content--section03 #callToAction {
       align-self: center;
     }
   }
+  //SECTION 02 ////////////////////////////////////////////////////
+  section.section--competences__container {
+    .section--competences__cardsArea {
+      .section--competences__cardsArea__accordions {
+        .section--competences__cardsArea__accordions__item {
+          .section--competences__cardsArea__card--title {
+            width: 296px;
+          }
+          .section--competences__cardsArea__card-desc--desktop {
+            left: 416px;
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 1024px) {
   .container {
@@ -524,69 +536,22 @@ section#content--section03 #callToAction {
       width: 200px;
     }
   }
-
-  section#content--banner .left-area {
-    display: none;
-  }
-  section .content--banner__competences-cards {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  section .content--banner__competences-card-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 230px;
-    height: auto;
-    background-color: $background-secondary-color;
-    padding: 40px 14px 15px 20px;
-  }
-  section .content--banner__competences-card-title h6 {
-    font-size: $title-h3;
-    font-weight: 400;
-    color: white;
-    margin: 0;
-  }
-  section .content--banner__competences-card-title svg {
-    display: none;
-  }
-  section .content--banner__competences-card-desc--mobile {
-    display: none; //DISPLAY NONE ATÉ SER ATIVIDADO PELO EVENTO DE CLICK
-  }
-  section .content--banner__competences-card-desc--desktop {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 65px 54px 0 54px;
-    background-color: $background-main-color;
-    visibility: visible;
-  }
-  section .content--banner__competences-card-desc--desktop p {
-    color: white;
-    font-size: 2rem;
-    font-weight: 100;
-    margin: 0 0 15px 0;
-  }
-  section .content--banner__competences-card-desc--desktop__linksArea {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    font-size: 2rem;
-
-    a {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: white;
-
-      span {
-        color: $main-color;
+  //SECTION 02 ////////////////////////////////////////////////////
+  section.section--competences__container {
+    .section--competences__cardsArea {
+      .section--competences__cardsArea__accordions {
+        .section--competences__cardsArea__accordions__item {
+          .section--competences__cardsArea__card--title {
+            width: 230px;
+            padding: 60px 15px 40px 15px;
+          }
+          .section--competences__cardsArea__card-desc--desktop {
+            width: 60%;
+            left: 270px;
+          }
+        }
       }
     }
-  }
-  section#content--banner #callToAction {
-    display: none;
   }
   section .section .left-area {
     justify-content: flex-start;
