@@ -164,11 +164,6 @@ section.container--section {
         width: 100%; }
         section.container--section .leftArea__buttonArea a :hover {
           background: #FFA700; }
-  section.container--section .leftArea--section01 {
-    max-width: 500px;
-    height: auto;
-    display: flex;
-    flex-direction: column; }
   section.container--section .rightArea {
     display: flex;
     flex-direction: column;
@@ -351,53 +346,44 @@ section.competencesBackground {
   section.competencesBackground #competencesBackground__callToAction {
     display: none; }
 
-section#content--section03 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0 120px 100px 120px;
-  background: radial-gradient(circle, #2c2c2c 0%, #1a1a1a 100%); }
-
-section .content__cardArea {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  gap: 18px; }
-
-section .section .left-area {
-  justify-content: flex-start; }
-
-section .content__cardArea__card--section03 {
-  max-width: 317px;
-  width: 100%;
-  height: auto;
-  border: 1px solid #6E6E6E; }
-
-section .content__card__photo img.content__card__photo--section03 {
-  width: 100%;
-  height: fit-content;
-  max-width: 267px;
-  max-height: 234px; }
-
-section .content__card__textArea-title--section03 h5 {
-  text-transform: uppercase;
-  margin: 0;
-  color: #F89D24; }
-
-section .content__card__textArea-desc--section03 p {
-  margin: 0;
-  color: #b5b5b5; }
-
-section#content--section03 #callToAction {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  padding: 60px 0 80px 0;
-  gap: 30px; }
+section.container--section03 {
+  flex-direction: column; }
+  section.container--section03 .leftArea {
+    justify-content: flex-start; }
+  section.container--section03 .rightArea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 18px; }
+    section.container--section03 .rightArea .rightArea__card {
+      max-width: 317px;
+      width: 100%;
+      height: auto;
+      border: 1px solid #6E6E6E; }
+      section.container--section03 .rightArea .rightArea__card .rightArea__image img.rightArea__image--section03 {
+        width: 100%;
+        height: fit-content;
+        max-width: 267px;
+        max-height: 234px; }
+      section.container--section03 .rightArea .rightArea__card .rightArea__title h3 {
+        text-transform: uppercase;
+        margin: 0;
+        color: #F89D24; }
+      section.container--section03 .rightArea .rightArea__card .rightArea__desc p {
+        margin: 0;
+        color: #b5b5b5; }
+  section.container--section03 #callToAction {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 60px 0 80px 0;
+    gap: 30px; }
+    section.container--section03 #callToAction a :hover {
+      background: #FFA700; }
 
 @media only screen and (max-width: 1400px) {
   section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__title {
@@ -454,26 +440,7 @@ section#content--section03 #callToAction {
     width: 230px;
     padding: 60px 15px 40px 15px; }
   section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__desc--desktop {
-    left: 230px; }
-  section .section .left-area {
-    justify-content: flex-start; }
-  section .content__cardArea__card--section03 {
-    max-width: 317px;
-    width: 100%;
-    height: auto;
-    border: 1px solid #6E6E6E; }
-  section .content__card__photo img.content__card__photo--section03 {
-    width: 100%;
-    height: fit-content;
-    max-width: 267px;
-    max-height: 234px; }
-  section .content__card__textArea-title--section03 h5 {
-    text-transform: uppercase;
-    margin: 0;
-    color: #F89D24; }
-  section .content__card__textArea-desc--section03 p {
-    margin: 0;
-    color: #b5b5b5; } }
+    left: 230px; } }
 
 @media only screen and (max-width: 820px) {
   main {
@@ -602,27 +569,44 @@ section#content--section03 #callToAction {
         align-items: center;
         gap: 30px;
         margin-block: 30px; }
-  section .content__cardArea__card--section03 {
-    max-width: 317px;
-    width: 100%;
-    height: auto;
-    border: 1px solid #6E6E6E; }
-  section .content__card__photo img.content__card__photo--section03 {
-    width: 100%;
-    height: fit-content;
-    max-width: 267px;
-    max-height: 234px; }
-  section .content__card__textArea-title--section03 h5 {
-    text-transform: uppercase;
-    margin: 0;
-    color: #F89D24; }
-  section .content__card__textArea-desc--section03 p {
-    margin: 0;
-    color: #b5b5b5; }
-  section
-.content__cardArea
-.content__cardArea__card--section03:nth-last-child(-n + 2) {
-    display: none; } }
+  section.container--section03 {
+    flex-direction: column; }
+    section.container--section03 .leftArea {
+      justify-content: flex-start; }
+    section.container--section03 .rightArea {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      gap: 18px; }
+      section.container--section03 .rightArea .rightArea__card {
+        max-width: 317px;
+        width: 100%;
+        height: auto;
+        border: 1px solid #6E6E6E; }
+        section.container--section03 .rightArea .rightArea__card .rightArea__image img.rightArea__image--section03 {
+          width: 100%;
+          height: fit-content;
+          max-width: 267px;
+          max-height: 234px; }
+        section.container--section03 .rightArea .rightArea__card .rightArea__title h3 {
+          text-transform: uppercase;
+          margin: 0;
+          color: #F89D24; }
+        section.container--section03 .rightArea .rightArea__card .rightArea__desc p {
+          margin: 0;
+          color: #b5b5b5; }
+      section.container--section03 .rightArea .rightArea__card:nth-last-child(-n + 2) {
+        display: none; }
+    section.container--section03 #callToAction {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 60px 0 80px 0;
+      gap: 30px; } }
 
 @media only screen and (max-width: 600px) {
   main {
@@ -684,7 +668,10 @@ section#content--section03 #callToAction {
       padding: 0 0px 0 10px; }
       section.competencesBackground .container--components .leftArea__textArea .leftArea__title h2 {
         padding-top: 45px;
-        font-size: 4.8rem; } }
+        font-size: 4.8rem; }
+  section.container--section03 #callToAction {
+    flex-direction: column;
+    align-items: center; } }
 
 @media only screen and (max-width: 300px) {
   .container {
