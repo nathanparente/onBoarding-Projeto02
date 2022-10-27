@@ -4,7 +4,7 @@
 /*GRADIENT*/
 /*BORDER*/
 @import url("https://fonts.googleapis.com/css2?family=Yantramanav&display=swap");
-.full {
+.btn--full {
   /* BOTÃO 1 */
   /* Auto layout */
   display: flex;
@@ -22,7 +22,7 @@
   font-size: 1.6rem;
   font-weight: 700; }
 
-.outline {
+.btn--outline {
   /* BOTÃO 2 */
   box-sizing: border-box;
   /* Auto layout */
@@ -53,6 +53,9 @@
 
 * {
   box-sizing: border-box; }
+  * a {
+    text-decoration: none;
+    text-transform: uppercase; }
 
 body {
   margin: 0;
@@ -99,48 +102,44 @@ main {
     width: 100%;
     gap: 30px;
     margin: 65px 0 20px 0; }
-    main #callToAction a {
-      text-decoration: none; }
-      main #callToAction a :hover {
-        background: #FFA700; }
+    main #callToAction a :hover {
+      background: #FFA700; }
 
-section.section__container {
-  margin: auto;
-  max-width: 1440px;
+section.container--section {
   max-height: 840px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0 120px 100px 120px; }
-  section.section__container .section__container__leftArea--section01 {
+  section.container--section .leftArea {
     max-width: 500px;
     height: auto;
     display: flex;
     flex-direction: column; }
-    section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea {
+    section.container--section .leftArea__textArea {
       width: 100%;
       padding: 0 50px 0 70px;
       display: flex;
       flex-direction: column;
       color: white; }
-    section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--title,
-    section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--desc {
-      max-width: 368px;
-      height: auto;
-      display: flex;
-      align-items: flex-start;
-      text-align: left;
-      margin-bottom: 15px; }
-    section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--title h2 {
-      font-size: 6.4rem;
-      padding-top: 120px;
-      font-weight: 400;
-      margin: 0; }
-    section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--desc p {
-      font-size: 2rem; }
-    section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--desc p span {
-      font-weight: 700; }
-    section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction {
+      section.container--section .leftArea__textArea .leftArea__title,
+      section.container--section .leftArea__textArea .leftArea__desc {
+        max-width: 368px;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        margin-bottom: 15px; }
+      section.container--section .leftArea__textArea .leftArea__title h2 {
+        font-size: 6.4rem;
+        padding-top: 120px;
+        font-weight: 400;
+        margin: 0; }
+      section.container--section .leftArea__textArea .leftArea__desc p {
+        font-size: 2rem; }
+        section.container--section .leftArea__textArea .leftArea__desc p span {
+          font-weight: 700; }
+    section.container--section .leftArea #leftArea__callToAction {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -149,24 +148,28 @@ section.section__container {
       gap: 0;
       margin-top: 0;
       padding: 0 50px 0 70px; }
-    section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction div {
-      width: 100%; }
-    section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction p {
-      color: white;
-      font-size: 1.6rem;
-      margin: 0;
-      text-align: end;
-      padding-right: 66px; }
-    section.section__container .section__container__leftArea--section01 .section__container__leftArea__section01__callToAction__buttonArea {
+      section.container--section .leftArea #leftArea__callToAction div {
+        width: 100%; }
+        section.container--section .leftArea #leftArea__callToAction div p {
+          color: white;
+          font-size: 1.6rem;
+          margin: 0;
+          text-align: end;
+          padding-right: 66px; }
+    section.container--section .leftArea__buttonArea {
       display: flex;
       flex-direction: row;
       gap: 30px; }
-      section.section__container .section__container__leftArea--section01 .section__container__leftArea__section01__callToAction__buttonArea a {
-        text-decoration: none;
+      section.container--section .leftArea__buttonArea a {
         width: 100%; }
-        section.section__container .section__container__leftArea--section01 .section__container__leftArea__section01__callToAction__buttonArea a :hover {
+        section.container--section .leftArea__buttonArea a :hover {
           background: #FFA700; }
-  section.section__container .section__container__rightArea__cardArea {
+  section.container--section .leftArea--section01 {
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+  section.container--section .rightArea {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -175,36 +178,36 @@ section.section__container {
     width: 545px;
     height: 660px;
     gap: 30px; }
-    section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card {
+    section.container--section .rightArea__card {
       width: 258px;
       height: 255px;
       border: 1px solid #6E6E6E; }
-    section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card__image {
-      display: inline-flex;
-      justify-content: center;
-      width: 100%;
-      height: auto;
-      padding: 20px; }
-      section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card__image img.section__container__rightArea__cardArea__card__image--section01 {
-        width: 98px;
-        height: 96px; }
-    section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card__textArea {
-      width: 100%;
-      height: auto;
-      padding: 20px;
-      font-size: 1.6rem;
-      font-weight: 700; }
-    section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card__textArea--title h5 {
-      text-transform: uppercase;
-      margin: 0;
-      color: #F89D24; }
-    section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card__textArea--desc p {
-      margin: 0;
-      color: #b5b5b5; }
-  section.section__container #callToAction {
+      section.container--section .rightArea__card .rightArea__image {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 20px; }
+        section.container--section .rightArea__card .rightArea__image img.rightArea__image--section01 {
+          width: 98px;
+          height: 96px; }
+      section.container--section .rightArea__card .rightArea__textArea {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        font-size: 1.6rem;
+        font-weight: 700; }
+        section.container--section .rightArea__card .rightArea__textArea .rightArea__title h3 {
+          text-transform: uppercase;
+          margin: 0;
+          color: #F89D24; }
+        section.container--section .rightArea__card .rightArea__textArea .rightArea__desc p {
+          margin: 0;
+          color: #b5b5b5; }
+  section.container--section #container--section__callToAction {
     display: none; }
 
-section.valueArea {
+section.bannerValue {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -217,7 +220,7 @@ section.valueArea {
   background-position: center;
   background-repeat: no-repeat;
   padding: 0 0 0 120px; }
-  section.valueArea .valueArea__textArea h3 {
+  section.bannerValue .bannerValue__textArea h3 {
     max-width: 706px;
     font-size: 4.8rem;
     font-weight: 400;
@@ -225,7 +228,7 @@ section.valueArea {
     margin: 0;
     padding: 66px 40px;
     line-height: 52.5px; }
-  section.valueArea .valueArea__callToAction {
+  section.bannerValue .bannerValue__callToAction {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,111 +237,118 @@ section.valueArea {
     background-color: #F89D24;
     padding: 60px 28px;
     margin-block: 40px; }
-    section.valueArea .valueArea__callToAction a {
-      text-decoration: none; }
-      section.valueArea .valueArea__callToAction a :hover {
-        background: #FF6A00;
-        color: white; }
-    section.valueArea .valueArea__callToAction p {
+    section.bannerValue .bannerValue__callToAction a :hover {
+      background: #FF6A00;
+      color: white; }
+    section.bannerValue .bannerValue__callToAction p {
       width: 368px;
       color: white;
       font-size: 6.4rem;
       margin: 0 0 25px 0; }
-  section.valueArea .valueArea__callToAction .full {
-    color: #F89D24;
-    background: white; }
+    section.bannerValue .bannerValue__callToAction .btn--value {
+      color: #F89D24;
+      background: white; }
 
-section.section--competences__container {
+section.competencesBackground {
   padding: 116px 0;
   background-image: url(../images/teacherBig.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
-  section.section--competences__container .section__container {
-    position: relative; }
-  section.section--competences__container .left-area {
-    display: none; }
-  section.section--competences__container .section--competences__cardsArea {
+  section.competencesBackground .container--components {
     display: flex;
     flex-direction: column;
     height: auto; }
-    section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions {
+    section.competencesBackground .container--components .leftArea {
+      display: none; }
+    section.competencesBackground .container--components .accordionArea {
       display: flex;
-      flex-direction: column; }
-      section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item {
+      flex-direction: column;
+      position: relative;
+      height: auto; }
+      section.competencesBackground .container--components .accordionArea__items {
         display: flex;
-        flex-direction: column;
-        /*
-        [id^="accordion"]:checked
-          >.section--competences__cardsArea__card-desc--desktop {
-          visibility: visible;
-        }
-        */ }
-        section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item input {
-          display: none; }
-        section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card--title {
+        flex-direction: column; }
+        section.competencesBackground .container--components .accordionArea__items .accordionArea__item {
           display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          align-items: center;
-          width: 460px;
-          max-height: 50px;
-          height: auto;
-          background-color: #686868;
-          padding: 60px 15px 40px 15px; }
-          section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card--title .section--competences__cardsArea__card--title__text {
+          flex-direction: column; }
+          section.competencesBackground .container--components .accordionArea__items .accordionArea__item input {
+            display: none; }
+          section.competencesBackground .container--components .accordionArea__items .accordionArea__item .accordionArea__title {
             display: flex;
-            margin-bottom: 5px; }
-            section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card--title .section--competences__cardsArea__card--title__text label {
-              font-size: 3.2rem;
-              font-weight: 400;
-              color: white;
-              margin: 0;
-              cursor: pointer; }
-            section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card--title .section--competences__cardsArea__card--title__text svg {
-              display: none; }
-          section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card--title div.section--competences__cardsArea__card--title__line {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 460px;
+            max-height: 50px;
+            height: auto;
+            background-color: #686868;
+            padding: 60px 15px 40px 15px; }
+            section.competencesBackground .container--components .accordionArea__items .accordionArea__item .accordionArea__title .accordionArea__label {
+              display: flex;
+              margin-bottom: 5px; }
+              section.competencesBackground .container--components .accordionArea__items .accordionArea__item .accordionArea__title .accordionArea__label label {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                font-size: 3.2rem;
+                font-weight: 400;
+                color: white;
+                margin: 0;
+                cursor: pointer; }
+                section.competencesBackground .container--components .accordionArea__items .accordionArea__item .accordionArea__title .accordionArea__label label svg {
+                  display: none; }
+            section.competencesBackground .container--components .accordionArea__items .accordionArea__item .accordionArea__title div.accordionArea__line {
+              visibility: hidden;
+              align-self: flex-end;
+              width: 75%;
+              height: 2px;
+              background-color: #F89D24; }
+          section.competencesBackground .container--components .accordionArea__items .accordionArea__item .accordionArea__desc--desktop {
             visibility: hidden;
-            align-self: flex-end;
-            width: 75%;
-            height: 2px;
-            background-color: #F89D24; }
-        section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop {
-          visibility: hidden;
-          width: 50%;
-          position: absolute;
-          left: 580px;
-          top: 1px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding-top: 63px;
-          background-color: #262626; }
-          section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop p {
-            color: white;
-            font-size: 2rem;
-            font-weight: 100;
-            margin: 0 0 15px 0;
-            max-width: 350px; }
-          section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop .section--competences__cardsArea__card-desc--desktop__linksArea {
-            max-width: 350px;
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+            position: absolute;
+            left: 460px;
+            top: 0px;
             display: flex;
-            justify-content: flex-end;
-            gap: 30px;
-            font-size: 2rem;
-            margin-bottom: 60px; }
-            section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop .section--competences__cardsArea__card-desc--desktop__linksArea a {
-              text-decoration: none;
-              text-transform: uppercase;
-              color: white; }
-              section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop .section--competences__cardsArea__card-desc--desktop__linksArea a span {
-                color: #F89D24; }
-        section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item [id^="accordion"]:checked
-~ .section--competences__cardsArea__card-desc--desktop {
-          visibility: visible; }
-  section.section--competences__container .section--competences__cardsArea__card--desc--mobile {
-    display: none; }
-  section.section--competences__container .section--competences__cardsArea #callToAction {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 100px 125px 50px 125px;
+            background-color: #262626; }
+            section.competencesBackground .container--components .accordionArea__items .accordionArea__item .accordionArea__desc--desktop p {
+              color: white;
+              font-size: 2rem;
+              font-weight: 100;
+              margin: 0 0 15px 0;
+              max-width: 569px; }
+            section.competencesBackground .container--components .accordionArea__items .accordionArea__item .accordionArea__desc--desktop .accordionArea__linksArea {
+              max-width: 350px;
+              display: flex;
+              justify-content: flex-end;
+              gap: 30px;
+              font-size: 2rem;
+              margin-bottom: 20px; }
+              section.competencesBackground .container--components .accordionArea__items .accordionArea__item .accordionArea__desc--desktop .accordionArea__linksArea a {
+                color: white; }
+                section.competencesBackground .container--components .accordionArea__items .accordionArea__item .accordionArea__desc--desktop .accordionArea__linksArea a span {
+                  color: #F89D24; }
+          section.competencesBackground .container--components .accordionArea__items .accordionArea__item [id^="accordion"]:checked ~ .accordionArea__desc--desktop {
+            visibility: visible; }
+          section.competencesBackground .container--components .accordionArea__items .accordionArea__item .accordionArea__desc--mobile {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px 32px;
+            background-color: #262626; }
+            section.competencesBackground .container--components .accordionArea__items .accordionArea__item .accordionArea__desc--mobile p {
+              color: white;
+              font-size: 2rem;
+              font-weight: 100;
+              margin: 0;
+              max-width: 350px; }
+  section.competencesBackground #competencesBackground__callToAction {
     display: none; }
 
 section#content--section03 {
@@ -390,60 +400,61 @@ section#content--section03 #callToAction {
   gap: 30px; }
 
 @media only screen and (max-width: 1400px) {
-  section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card--title {
+  section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__title {
     width: 420px; }
-  section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop {
-    left: 540px; } }
+  section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__desc--desktop {
+    padding: 100px 80px 65px 80px;
+    left: 420px; } }
 
 @media only screen and (max-width: 1234px) {
-  section.section__container {
+  section.container--section {
     max-height: max-content;
     flex-direction: column;
     padding: 0 120px 100px 120px; }
-    section.section__container .section__container__leftArea--section01 {
+    section.container--section .leftArea {
       max-width: 100%;
       flex-direction: row; }
-      section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--desc {
+      section.container--section .leftArea__textArea .leftArea__desc {
         max-width: 415px; }
-      section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction {
+      section.container--section .leftArea #leftArea__callToAction {
         width: 428px;
         padding: 0 0px 0 100px; }
-      section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction p {
-        text-align: start;
-        padding-right: 0;
-        margin-bottom: 10px; }
-      section.section__container .section__container__leftArea--section01 .section__container__leftArea__section01__callToAction__buttonArea {
+        section.container--section .leftArea #leftArea__callToAction p {
+          text-align: start;
+          padding-right: 0;
+          margin-bottom: 10px; }
+      section.container--section .leftArea__buttonArea {
         flex-direction: column; }
-    section.section__container .section__container__rightArea__cardArea {
+    section.container--section .rightArea {
       align-self: center; }
-  section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card--title {
+  section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__title {
     width: 296px; }
-  section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop {
-    left: 416px; } }
+  section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__desc--desktop {
+    padding: 100px 30px 65px 30px;
+    left: 296px; } }
 
 @media only screen and (max-width: 1024px) {
   .container {
     padding: 25px 40px; }
-  section.section__container {
+  section.container--section {
     padding: 0 40px 80px 40px; }
-    section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction {
+    section.container--section .leftArea #leftArea__callToAction {
       width: 238px;
       padding: 0; }
-  section.valueArea {
+  section.bannerValue {
     padding: 0; }
-    section.valueArea .valueArea__callToAction {
+    section.bannerValue .bannerValue__callToAction {
       width: 300px; }
-      section.valueArea .valueArea__callToAction p {
+      section.bannerValue .bannerValue__callToAction p {
         width: 300px;
         font-size: 4.8rem; }
-    section.valueArea .valueArea__callToAction .full {
-      width: 200px; }
-  section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card--title {
+      section.bannerValue .bannerValue__callToAction .btn--full {
+        width: 200px; }
+  section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__title {
     width: 230px;
     padding: 60px 15px 40px 15px; }
-  section.section--competences__container .section--competences__cardsArea .section--competences__cardsArea__accordions .section--competences__cardsArea__accordions__item .section--competences__cardsArea__card-desc--desktop {
-    width: 60%;
-    left: 270px; }
+  section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__desc--desktop {
+    left: 230px; }
   section .section .left-area {
     justify-content: flex-start; }
   section .content__cardArea__card--section03 {
@@ -466,9 +477,18 @@ section#content--section03 #callToAction {
 
 @media only screen and (max-width: 820px) {
   main {
-    height: 740px; } }
+    height: 740px; }
+  section.competencesBackground {
+    background-position: left; }
+    section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__title {
+      width: 296px; }
+    section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__desc--desktop {
+      padding: 100px 20px 45px 20px;
+      left: 296px; }
+      section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__desc--desktop .accordionArea__linksArea {
+        font-size: 1.8rem; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .container {
     padding: 25px 40px; }
   main .main__logo svg {
@@ -483,66 +503,105 @@ section#content--section03 #callToAction {
     background-repeat: no-repeat;
     flex-direction: column;
     padding: 0 40px 60px 40px; }
-  section.section__container {
+  section.container--section {
     padding: 0 40px 80px 40px; }
-    section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction {
+    section.container--section .leftArea #leftArea__callToAction {
       width: 238px;
       padding: 0; }
-  section.valueArea {
+  section.bannerValue {
     flex-direction: column; }
-    section.valueArea .valueArea__textArea h3 {
+    section.bannerValue .bannerValue__textArea h3 {
       width: 100%;
       font-size: 4.8rem;
       margin: 0;
       padding: 35px 25px; }
-    section.valueArea .valueArea__callToAction {
+    section.bannerValue .bannerValue__callToAction {
       width: 100%;
       height: auto;
       padding: 35px 64px;
       margin-block: 0; }
-      section.valueArea .valueArea__callToAction p {
+      section.bannerValue .bannerValue__callToAction p {
         font-size: 4.8rem; }
-    section.valueArea .valueArea__valueButton p {
-      padding: 35px 25px;
-      margin: 0; }
-  section#content--banner .left-area {
-    display: flex;
-    justify-content: flex-start; }
-  section .content--banner__competences-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto; }
-  section .content--banner__competences-card-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: #686868;
-    padding: 10px 15px; }
-  section .content--banner__competences-card-title h6 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: white;
-    margin: 0; }
-  section .content--banner__competences-card-title svg {
-    display: block;
-    width: 11px;
-    height: 6px;
-    transform: rotate(180deg); }
-  section .content--banner__competences-card-desc--mobile {
-    display: none;
-    width: 100%;
-    height: auto;
-    padding: 25px 32px;
-    background-color: #262626; }
-  section .content--banner__competences-card-desc--desktop {
-    display: none; }
-  section .content--banner__competences-card-desc--mobile p {
-    color: white;
-    font-size: 1.6rem; }
+      section.bannerValue .bannerValue__callToAction .btn--value p {
+        padding: 35px 25px;
+        margin: 0; }
+  section.competencesBackground {
+    height: 1040px;
+    padding: 0; }
+    section.competencesBackground .container--components {
+      height: 100vh;
+      padding-top: 0;
+      justify-content: space-between; }
+      section.competencesBackground .container--components .leftArea {
+        max-width: 500px;
+        height: auto;
+        display: flex;
+        flex-direction: column; }
+        section.competencesBackground .container--components .leftArea__textArea {
+          width: 100%;
+          padding: 0 50px 0 70px;
+          display: flex;
+          flex-direction: column;
+          color: white; }
+          section.competencesBackground .container--components .leftArea__textArea .leftArea__title,
+          section.competencesBackground .container--components .leftArea__textArea .leftArea__desc {
+            max-width: 368px;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            text-align: left;
+            margin-bottom: 15px; }
+          section.competencesBackground .container--components .leftArea__textArea .leftArea__title h2 {
+            font-size: 6.4rem;
+            padding-top: 120px;
+            font-weight: 400;
+            margin: 0; }
+          section.competencesBackground .container--components .leftArea__textArea .leftArea__desc p {
+            font-size: 2rem; }
+            section.competencesBackground .container--components .leftArea__textArea .leftArea__desc p span {
+              font-weight: 700; }
+        section.competencesBackground .container--components .leftArea #leftArea__callToAction {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          gap: 0;
+          margin-top: 0;
+          padding: 0 50px 0 70px; }
+          section.competencesBackground .container--components .leftArea #leftArea__callToAction div {
+            width: 100%; }
+            section.competencesBackground .container--components .leftArea #leftArea__callToAction div p {
+              color: white;
+              font-size: 1.6rem;
+              margin: 0;
+              text-align: end;
+              padding-right: 66px; }
+        section.competencesBackground .container--components .leftArea__buttonArea {
+          display: none; }
+      section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__title {
+        width: 100%;
+        padding: 10px 20px;
+        max-height: 70px; }
+        section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__title .accordionArea__label {
+          width: 100%;
+          justify-content: space-between;
+          align-items: center; }
+          section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__title .accordionArea__label label {
+            font-size: 2rem; }
+          section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__title .accordionArea__label svg {
+            display: block;
+            transform: rotate(180deg); }
+      section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item [id^="accordion"]:checked ~ .accordionArea__desc--mobile {
+        display: flex; }
+      section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__desc--desktop {
+        display: none; }
+      section.competencesBackground .container--components #competencesBackground__callToAction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-block: 30px; }
   section .content__cardArea__card--section03 {
     max-width: 317px;
     width: 100%;
@@ -578,56 +637,72 @@ section#content--section03 #callToAction {
       color: #b5b5b5; }
     main #callToAction {
       flex-direction: column; }
-  section.section__container {
+  section.container--section {
     max-height: max-content;
     flex-direction: column; }
-    section.section__container .section__container__leftArea--section01 {
+    section.container--section .leftArea {
       max-width: 100%;
       flex-direction: row; }
-      section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea {
+      section.container--section .leftArea__squareStyle svg {
+        width: 100px;
+        height: 100px; }
+      section.container--section .leftArea__textArea {
         padding: 0 0 0 10px; }
-      section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--desc {
-        max-width: 100%; }
-      section.section__container .section__container__leftArea--section01 #section__container__leftArea__section01__callToAction {
+        section.container--section .leftArea__textArea .leftArea__title {
+          max-width: 278px; }
+          section.container--section .leftArea__textArea .leftArea__title h2 {
+            padding-top: 45px;
+            font-size: 4.8rem; }
+        section.container--section .leftArea__textArea .leftArea__desc {
+          max-width: 100%; }
+      section.container--section .leftArea #leftArea__callToAction {
         display: none; }
-    section.section__container .section__container__rightArea__cardArea {
+    section.container--section .rightArea {
       flex-direction: row;
       align-self: center;
       height: auto;
       width: 100%; }
-      section.section__container .section__container__rightArea__cardArea .section__container__rightArea__cardArea__card {
+      section.container--section .rightArea__card {
         max-width: 258px;
         width: 100%;
         height: auto; }
-    section.section__container #callToAction {
+    section.container--section #container--section__callToAction {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       margin-block: 35px;
       gap: 30px; }
-      section.section__container #callToAction a {
-        text-decoration: none; }
-        section.section__container #callToAction a :hover {
-          background: #FFA700; } }
+      section.container--section #container--section__callToAction a :hover {
+        background: #FFA700; }
+  section.competencesBackground {
+    background-position: left; }
+    section.competencesBackground .container--components .leftArea__squareStyle svg {
+      width: 100px;
+      height: 100px; }
+    section.competencesBackground .container--components .leftArea__textArea {
+      padding: 0 0px 0 10px; }
+      section.competencesBackground .container--components .leftArea__textArea .leftArea__title h2 {
+        padding-top: 45px;
+        font-size: 4.8rem; } }
 
 @media only screen and (max-width: 300px) {
   .container {
     padding: 25px 15px; }
   main > .main__title h1 {
     font-size: 3.2rem; }
-  section.section__container .section__container__leftArea--section01 .section__container__leftArea__textArea--title h2 {
+  section.container--section .leftArea__title h2 {
     font-size: 4.8rem;
     padding-top: 140px;
     font-weight: 400;
     margin: 0; }
-  section.section__container #callToAction {
+  section.container--section #container--section__callToAction {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-block: 35px;
     gap: 30px; }
-    section.section__container #callToAction .outline,
-    section.section__container #callToAction .full {
+    section.container--section #container--section__callToAction .btn--outline,
+    section.container--section #container--section__callToAction .btn--full {
       width: 165px; } }

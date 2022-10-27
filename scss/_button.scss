@@ -1,7 +1,7 @@
 @import "colors";
 @import "font";
 
-.full {
+.btn--full {
   /* BOTÃO 1 */
   /* Auto layout */
   display: flex;
@@ -22,7 +22,7 @@
   font-weight: 700;
 }
 
-.outline {
+.btn--outline {
   /* BOTÃO 2 */
   box-sizing: border-box;
   /* Auto layout */
