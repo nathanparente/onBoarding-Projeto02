@@ -30,7 +30,8 @@ body {
 .container {
   margin: auto;
   max-width: 1440px;
-  max-height: 840px;
+  min-height: 840px;
+  max-height: max-content;
   padding: 25px 120px;
 }
 //MAIN ////////////////////////////////////////////////////
@@ -83,7 +84,8 @@ main {
 }
 //SECTION 01 ////////////////////////////////////////////////////
 section.container--section {
-  max-height: 840px;
+  min-height: 840px;
+  max-height: max-content;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -272,7 +274,7 @@ section.competencesBackground {
   .container--components {
     display: flex;
     flex-direction: column;
-    height: auto;
+    min-height: auto;
     .leftArea {
       display: none;
     }
@@ -366,6 +368,9 @@ section.competencesBackground {
           [id^="accordion"]:checked ~ .accordionArea__desc--desktop {
             visibility: visible;
           }
+          [id^="accordion"]:checked ~ * .accordionArea__line {
+            visibility: visible;
+          }
           .accordionArea__desc--mobile {
             display: none; //DISPLAY NONE ATÉ SER ATIVIDADO PELO EVENTO DE CLICK
             flex-direction: column;
@@ -442,6 +447,136 @@ section.container--section03 {
     }
   }
 }
+//BANNER FEEDBACK - CARDS ////////////////////////////////////////////////////
+section.container--feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  max-height: 768px;
+  background-image: url(../images/opinion@2x.jpg);
+  background-position: center;
+  background-size: cover;
+  .container--feedback__borderAngle--01 {
+    align-self: flex-end;
+  }
+  .feedbackContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    height: 460px;
+    &__feedbackArea {
+      display: flex;
+      //align-items: center;
+      //justify-content: center;
+      width: 100%;
+      .feedbackContent__feedbacks {
+        width: 960px;
+        height: 278px;
+        position: relative;
+        //width: 500%;
+        //height: 100%;
+        input {
+          display: none;
+        }
+        .feedbackContent__feedback {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          //width: 20%;
+          //background: none;
+          //padding-left: 30px;
+          .feedbackContent__text {
+            display: flex;
+            flex-direction: column;
+            padding-top: 120px;
+            .feedbackContent__desc {
+              color: white;
+              font-size: $title-h2;
+              margin: 0;
+              text-align: center;
+              padding-inline: 40px;
+            }
+            .feedbackContent__title {
+              align-self: flex-end;
+              text-align: right;
+              color: $main-color;
+              h4 {
+                font-size: 2rem;
+                text-transform: uppercase;
+              }
+            }
+          }
+          label.feedbackContent__feedbacks__arrow--02,
+          label.feedbackContent__feedbacks__arrow--01 {
+            cursor: pointer;
+            svg:hover {
+              path {
+                fill: white;
+              }
+            }
+          }
+          label.feedbackContent__feedbacks__arrow--02 {
+            transform: rotate(180deg);
+          }
+        }
+        //FEEDBACK CARDS ////////////////////////////////////
+        .s1,
+        .s2,
+        .s3,
+        .s4 {
+          z-index: 1;
+          opacity: 0;
+        }
+        #feedback1:checked ~ .s1 {
+          z-index: 2;
+          opacity: 1;
+        }
+        #feedback2:checked ~ .s2 {
+          z-index: 3;
+          opacity: 1;
+          ~ .s1 {
+            opacity: 0;
+          }
+        }
+        #feedback3:checked ~ .s3 {
+          z-index: 4;
+          opacity: 1;
+          ~ .s1,
+          ~ .s2 {
+            opacity: 0;
+          }
+        }
+        #feedback4:checked ~ .s4 {
+          z-index: 5;
+          opacity: 1;
+          ~ .s1,
+          ~ .s2,
+          ~ .s3 {
+            opacity: 0;
+          }
+        }
+      }
+      [id^="feedback"] {
+        display: none;
+      }
+    }
+    &__navigation {
+      label {
+        margin-inline: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+  .container--feedback__borderAngle--02 {
+    align-self: flex-start;
+    transform: rotate(180deg);
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   //SECTION 02 ////////////////////////////////////////////////////
   section.competencesBackground {
@@ -459,6 +594,14 @@ section.container--section03 {
           }
         }
       }
+    }
+  }
+  //BANNER FEEDBACK - CARDS ////////////////////////////////////////////////////
+  section.container--feedback {
+    .container--feedback__borderAngle--01 {
+    }
+    .feedbackContent {
+      max-width: 820px;
     }
   }
 }
@@ -739,6 +882,9 @@ section.container--section03 {
                   transform: rotate(180deg);
                 }
               }
+              div.accordionArea__line {
+                background: none;
+              }
             }
             [id^="accordion"]:checked ~ .accordionArea__desc--mobile {
               display: flex;
@@ -952,6 +1098,19 @@ section.container--section03 {
       .btn--outline,
       .btn--full {
         width: 165px;
+      }
+    }
+  }
+  //SECTION 03 ////////////////////////////////////////////////////
+  section.container--section03 {
+    flex-direction: column;
+    //LEFT-AREA TEXT//////////////////////////////////////////////////
+    .leftArea {
+      justify-content: flex-start;
+      .leftArea__textArea {
+        .leftArea__title h2 {
+          font-size: 4rem;
+        }
       }
     }
   }
