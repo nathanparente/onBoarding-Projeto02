@@ -269,7 +269,6 @@ section.competencesBackground {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  //background-attachment: fixed;
 
   .container--components {
     display: flex;
@@ -593,6 +592,13 @@ section.container--feedback {
     right: 120px;
   }
 }
+//SECTION 04 ////////////////////////////////////////////////////
+section.container--section0container--section04 {
+  background-image: url(../images/negociando@2x-2.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
 
 @media only screen and (max-width: 1400px) {
   //SECTION 02 ////////////////////////////////////////////////////
@@ -761,6 +767,13 @@ section.container--feedback {
     .container--feedback__borderAngle--02 {
       right: 40px;
     }
+  }
+  //SECTION 04 ////////////////////////////////////////////////////
+  section.container--section04 {
+    //background-image: url(../images/negociando@2x.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
   }
 }
 @media only screen and (max-width: 880px) {
@@ -1183,6 +1196,102 @@ section.container--feedback {
     .feedbackContent__navigation {
       label {
         margin-inline: 25px;
+      }
+    }
+  }
+  //SECTION 04 E 05 ////////////////////////////////////////////////////
+  section.flexContainer {
+    display: flex;
+    flex-direction: column;
+    section.container {
+      min-height: 635px;
+    }
+    //SECTION 04 ////////////////////////////////////////////////////
+    section.container--section04 {
+      background-image: url(../images/negociando.jpg);
+      background-size: cover;
+      background-position: left;
+      background-repeat: no-repeat;
+
+      order: 2;
+      .leftArea {
+        flex-direction: column;
+        &__textArea {
+          .leftArea__title {
+            width: 200px;
+          }
+
+          .leftArea__desc p {
+            font-size: $body-font2;
+            color: $grey;
+          }
+        }
+        #leftArea__callToAction {
+          display: flex;
+          align-self: center;
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+    //SECTION 05 ////////////////////////////////////////////////////
+    section.container--section {
+      justify-content: flex-start;
+    }
+    section.container--section05 {
+      flex-direction: column;
+      order: 1;
+      .leftArea {
+        &__textArea {
+          .leftArea__title {
+            width: 400px;
+          }
+          .leftArea__desc p {
+            font-size: $body-font2;
+            color: $grey;
+          }
+        }
+      }
+      .rightArea {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 30px;
+
+        &__textArea {
+          width: 100%;
+          height: auto;
+          padding: 20px 0 0 0;
+          font-size: $body-font2;
+          font-weight: 700;
+          .rightArea__title {
+            display: flex;
+            align-items: center;
+            h3 {
+              text-transform: uppercase;
+              margin: 0;
+              padding-left: 10px;
+              color: $main-color;
+            }
+          }
+          .rightArea__desc {
+            padding: 0 0 0 10px;
+            p {
+              margin: 0;
+              color: $grey;
+            }
+          }
+        }
+      }
+      #leftArea__callToAction {
+        display: flex;
+        align-self: center;
+        margin-top: 50px;
+        p {
+          display: none;
+        }
       }
     }
   }
