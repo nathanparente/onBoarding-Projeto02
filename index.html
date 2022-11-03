@@ -11,7 +11,7 @@
   <body>
     <!--MODAL ===================================================================== -->
     <div id="modal" class="mainModal">
-      <div class="mainModal__close">
+      <div class="mainModal__close" onclick="closeModal()">
         <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1L31 31" stroke="#707070"/>
           <path d="M1 31L31 1" stroke="#707070"/>
@@ -88,7 +88,7 @@
         </p>
       </div>
       <div id="callToAction">
-        <a href="#modal" role="button"><div class="btn--outline">tenho interesse</div></a>
+        <a role="button"><div class="btn--outline" onclick="openModal()"">tenho interesse</div></a>
         <a href="#buyCourse" role="button"><div class="btn--full">comprar agora</div></a>
       </div>
     </main>
@@ -852,5 +852,6 @@
         <p>texto adicional 3</p>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

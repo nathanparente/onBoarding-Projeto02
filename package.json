@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/nathanparente/onBoarding-Projeto02#readme",
   "dependencies": {
-    "gulp-sass": "^5.1.0",
     "node-sass": "^7.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }

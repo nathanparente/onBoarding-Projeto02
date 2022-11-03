@@ -71,35 +71,35 @@ body {
   max-height: max-content;
   padding: 25px 120px; }
 
-#modal {
-  display: flex;
+.mainModal {
+  display: none;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 100vh;
   padding: 29px 25px;
   background: #262626; }
-  #modal .mainModal__close {
+  .mainModal .mainModal__close {
     display: flex;
     width: 100%;
     justify-content: flex-end; }
-  #modal .mainModal__textArea {
+  .mainModal .mainModal__textArea {
     width: 100%;
     max-width: 430px;
     text-align: center; }
-    #modal .mainModal__textArea h1 {
+    .mainModal .mainModal__textArea h1 {
       font-size: 3.2rem;
       color: #F89D24;
       text-transform: uppercase; }
-    #modal .mainModal__textArea p {
+    .mainModal .mainModal__textArea p {
       font-size: 1.6rem;
       color: #b5b5b5; }
-  #modal .formArea {
+  .mainModal .formArea {
     display: flex;
     flex-direction: column;
     max-width: 230px;
     gap: 20px; }
-    #modal .formArea .formArea__input--group input {
+    .mainModal .formArea .formArea__input--group input {
       width: 100%;
       border: solid 1.5px #F89D24;
       border-radius: 4px;
@@ -108,38 +108,41 @@ body {
       font-size: 1.6rem;
       color: #F89D24;
       outline: 0; }
-    #modal .formArea .formArea__input--group input::placeholder {
+    .mainModal .formArea .formArea__input--group input::placeholder {
       color: #F89D24;
       font-size: 1.6rem; }
-    #modal .formArea label {
+    .mainModal .formArea label {
       display: flex;
       align-items: center;
       gap: 10px; }
-      #modal .formArea label input {
+      .mainModal .formArea label input {
         margin: 0;
         display: none; }
-      #modal .formArea label input:checked ~ .checkbox {
+      .mainModal .formArea label input:checked ~ .checkbox {
         background-image: url(../images/icon-done.svg);
         background-position: center;
         background-size: cover; }
-      #modal .formArea label .checkbox {
+      .mainModal .formArea label .checkbox {
         width: 15px;
         height: 15px;
         border: 1px solid #F89D24;
         background: none; }
-      #modal .formArea label p {
+      .mainModal .formArea label p {
         font-size: 1.6rem;
         color: white; }
-    #modal .formArea .modal__callToAction p {
+    .mainModal .formArea .modal__callToAction p {
       display: none; }
-    #modal .formArea .modal__callToAction button {
+    .mainModal .formArea .modal__callToAction button {
       max-width: 230px;
       padding: 0;
       border: none;
       border-radius: 10px;
       cursor: pointer; }
-      #modal .formArea .modal__callToAction button .btn--full {
+      .mainModal .formArea .modal__callToAction button .btn--full {
         max-width: 230px; }
+
+.enabled {
+  display: flex; }
 
 main {
   min-height: 100vh; }
