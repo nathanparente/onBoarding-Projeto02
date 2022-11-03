@@ -34,10 +34,100 @@ body {
   max-height: max-content;
   padding: 25px 120px;
 }
+//MODAL ///////////////////////////////////////////////////
+#modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 29px 25px;
+  background: $background-main-color;
+  .mainModal__close {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .mainModal__textArea {
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+    h1 {
+      font-size: $sub-title1;
+      color: $main-color;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: $sub-title3;
+      color: $grey;
+    }
+  }
+  .formArea {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+    gap: 20px;
+    .formArea__input--group {
+      input {
+        width: 100%;
+        border: solid 1.5px $main-color;
+        border-radius: 4px;
+        background: white;
+        padding: 1rem;
+        font-size: 1.6rem;
+        color: $main-color;
+        //margin-bottom: 20px;
+        outline: 0;
+      }
+      input::placeholder {
+        color: $main-color;
+        font-size: $sub-title3;
+      }
+    }
+    label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      input {
+        margin: 0;
+        display: none;
+      }
+      input:checked ~ .checkbox {
+        background-image: url(../images/icon-done.svg);
+        background-position: center;
+        background-size: cover;
+      }
+      .checkbox {
+        width: 15px;
+        height: 15px;
+        border: 1px solid $main-color;
+        background: none;
+      }
+      p {
+        font-size: $body-font2;
+        color: white;
+      }
+    }
+    .modal__callToAction {
+      p {
+        display: none;
+      }
+      button {
+        max-width: 230px;
+        padding: 0;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        .btn--full {
+          max-width: 230px;
+        }
+      }
+    }
+  }
+}
 //MAIN ////////////////////////////////////////////////////
 main {
   min-height: 100vh;
-
   //TODAS AS CLASSES QUE FARÃO PARTE DE TÍTULOS FICARÃO ALINHADAS
   > div[class*="title"] {
     display: flex;
@@ -1031,6 +1121,23 @@ footer.container--footer {
   }
 }
 @media only screen and (max-width: 767px) {
+  //MODAL ///////////////////////////////////////////////////
+  #modal {
+    .mainModal__textArea {
+      max-width: 200px;
+    }
+    .formArea {
+      max-width: 200px;
+      .modal__callToAction {
+        button {
+          width: 200px;
+          .btn--full {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
   .container {
     padding: 25px 40px;
   }
@@ -1742,6 +1849,23 @@ footer.container--footer {
               padding-top: 55px;
               font-size: 3.6rem;
             }
+          }
+        }
+      }
+    }
+  }
+  //MODAL ///////////////////////////////////////////////////
+  #modal {
+    .mainModal__textArea {
+      max-width: 150px;
+    }
+    .formArea {
+      max-width: 150px;
+      .modal__callToAction {
+        button {
+          width: 150px;
+          .btn--full {
+            width: 150px;
           }
         }
       }

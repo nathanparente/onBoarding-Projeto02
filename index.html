@@ -9,6 +9,42 @@
     <title>Layout02</title>
   </head>
   <body>
+    <!--MODAL ===================================================================== -->
+    <div id="modal" class="mainModal">
+      <div class="mainModal__close">
+        <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L31 31" stroke="#707070"/>
+          <path d="M1 31L31 1" stroke="#707070"/>
+        </svg>
+      </div>
+      <div class="mainModal__textArea">
+        <h1>lorem</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+      </div>
+      <form class="formArea" action="/" method="get">
+        <div class="formArea__input--group">
+          <input id="input--name" type="text" placeholder="Nome"/>
+        </div>
+        <div class="formArea__input--group">
+          <input id="input--phone" type="number" placeholder="Telefone"/>
+        </div>
+        <div class="formArea__input--group">
+          <input id="input--email" type="email" placeholder="Email"/>
+        </div>
+        <div class="formArea__input--group">
+          <input id="input--profession" type="text" placeholder="Profissão"/>
+        </div>
+        <label>
+          <input class="checkbox--modal" type="checkbox" name="checkbox--modal">
+          <div class="checkbox"></div>
+          <p>Li e aceito os termos de uso</p>
+        </label>
+        <div class="modal__callToAction">
+          <p>R$ 5.000,00</p>
+          <button type="submit"><div class="btn--full btn--value">declarar interesse</div></button>
+        </div>
+      </form>
+    </div>
     <!--MAIN ===================================================================== -->
     <main class="container">
       <div class="main__logo">
@@ -52,7 +88,7 @@
         </p>
       </div>
       <div id="callToAction">
-        <a href="#buyCourse" role="button"><div class="btn--outline">tenho interesse</div></a>
+        <a href="#modal" role="button"><div class="btn--outline">tenho interesse</div></a>
         <a href="#buyCourse" role="button"><div class="btn--full">comprar agora</div></a>
       </div>
     </main>
