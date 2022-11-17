@@ -497,12 +497,14 @@ section.container--feedback {
     align-items: center;
     justify-content: space-between;
     max-width: 960px;
+    height: 100vh;
     gap: 30px; }
     section.container--feedback .feedbackContent__feedbackArea {
       display: flex;
       width: 960px;
-      height: 390px;
-      position: relative; }
+      height: 550px;
+      position: relative;
+      padding-top: 190px; }
       section.container--feedback .feedbackContent__feedbackArea input {
         display: none; }
       section.container--feedback .feedbackContent__feedbackArea .feedbackContent__feedback {
@@ -513,7 +515,7 @@ section.container--feedback {
         section.container--feedback .feedbackContent__feedbackArea .feedbackContent__feedback .feedbackContent__text {
           display: flex;
           flex-direction: column;
-          padding-top: 120px; }
+          padding-top: 60px; }
           section.container--feedback .feedbackContent__feedbackArea .feedbackContent__feedback .feedbackContent__text .feedbackContent__desc {
             color: white;
             font-size: 4.8rem;
@@ -567,16 +569,18 @@ section.container--feedback {
           opacity: 0; }
       section.container--feedback .feedbackContent__feedbackArea [id^="feedback"] {
         display: none; }
-    section.container--feedback .feedbackContent__navigation label {
-      margin-inline: 30px;
-      cursor: pointer; }
-      section.container--feedback .feedbackContent__navigation label svg:hover path:nth-child(1) {
-        display: none; }
-      section.container--feedback .feedbackContent__navigation label svg:hover path:nth-child(2) {
-        fill: white;
-        stroke: white;
-        stroke-width: 4px;
-        stroke-linecap: square; }
+    section.container--feedback .feedbackContent__navigation {
+      padding-bottom: 230px; }
+      section.container--feedback .feedbackContent__navigation label {
+        margin-inline: 30px;
+        cursor: pointer; }
+        section.container--feedback .feedbackContent__navigation label svg:hover path:nth-child(1) {
+          display: none; }
+        section.container--feedback .feedbackContent__navigation label svg:hover path:nth-child(2) {
+          fill: white;
+          stroke: white;
+          stroke-width: 4px;
+          stroke-linecap: square; }
   section.container--feedback .container--feedback__borderAngle--02 {
     align-self: flex-start;
     transform: rotate(180deg);
@@ -723,7 +727,7 @@ footer.container--footer {
     padding: 70px 50px 65px 100px;
     left: 400px; }
   section.container--feedback .feedbackContent__feedbackArea {
-    width: 860px;
+    width: 900px;
     height: 400px; } }
 
 @media only screen and (max-width: 1254px) {
@@ -761,9 +765,8 @@ footer.container--footer {
   section.competencesBackground .container--components .accordionArea .accordionArea__items .accordionArea__item .accordionArea__desc--desktop {
     left: 280px;
     padding: 70px 30px 65px 30px; }
-  section.container--feedback .feedbackContent__feedbackArea {
-    width: 670px;
-    height: 445px; }
+  section.container--feedback .feedbackContent__navigation {
+    padding-bottom: 100px; }
   section.flexContainer section.container--section04 .leftArea {
     align-self: flex-end; }
   section.flexContainer section.container--section05 .leftArea {
@@ -792,7 +795,7 @@ footer.container--footer {
   section.container--feedback .container--feedback__borderAngle--01 {
     left: 40px; }
   section.container--feedback .feedbackContent__feedbackArea {
-    width: 670px;
+    width: 645px;
     height: 445px; }
   section.container--feedback .container--feedback__borderAngle--02 {
     right: 40px; }
@@ -802,11 +805,8 @@ footer.container--footer {
     background-repeat: no-repeat; } }
 
 @media only screen and (max-width: 880px) {
-  section.container--feedback .feedbackContent__feedbackArea {
-    width: 610px;
-    height: 520px; }
-    section.container--feedback .feedbackContent__feedbackArea .feedbackContent__feedback__text p {
-      padding-inline: 25px; }
+  section.container--feedback .feedbackContent__feedbackArea .feedbackContent__feedback__text p {
+    padding-inline: 25px; }
   section.flexContainer section.container--section05 {
     flex-direction: column; }
     section.flexContainer section.container--section05 .leftArea #leftArea__callToAction {
@@ -1014,7 +1014,8 @@ footer.container--footer {
     width: 100%; }
     section.container--feedback .feedbackContent__feedbackArea {
       width: 100%;
-      height: 400px; }
+      height: 400px;
+      padding-top: 260px; }
       section.container--feedback .feedbackContent__feedbackArea .feedbackContent__feedback label {
         display: none; }
       section.container--feedback .feedbackContent__feedbackArea .feedbackContent__feedback .feedbackContent__text {
@@ -1176,7 +1177,8 @@ footer.container--footer {
     flex-direction: column;
     align-items: center; }
   section.container--feedback .feedbackContent__feedbackArea {
-    height: 580px; }
+    height: 580px;
+    padding-top: 230px; }
     section.container--feedback .feedbackContent__feedbackArea .feedbackContent__feedback .feedbackContent__text .feedbackContent__desc {
       padding-inline: 0; }
   section.container--feedback .feedbackContent__navigation label {
@@ -1218,11 +1220,17 @@ footer.container--footer {
     flex-direction: column;
     gap: 0; } }
 
+@media only screen and (max-width: 480px) {
+  section.container--feedback .feedbackContent__feedbackArea {
+    padding-top: 100px; } }
+
 @media only screen and (max-width: 380px) {
   section.container--feedback .feedbackContent__feedbackArea {
-    height: 760px; }
-  section.container--feedback .feedbackContent__navigation label {
-    margin-inline: 15px; }
+    padding-top: 30px; }
+  section.container--feedback .feedbackContent__navigation {
+    padding-bottom: 20px; }
+    section.container--feedback .feedbackContent__navigation label {
+      margin-inline: 15px; }
   section.flexContainer section.container--section05 .leftArea__textArea .leftArea__title {
     width: 100%; } }
 
@@ -1264,9 +1272,11 @@ footer.container--footer {
       section.container--section03 .leftArea .leftArea__textArea .leftArea__title h2 {
         font-size: 3.6rem; }
   section.container--feedback .feedbackContent__feedbackArea {
-    height: 760px; }
+    padding-top: 150px; }
     section.container--feedback .feedbackContent__feedbackArea .feedbackContent__feedback .feedbackContent__text .feedbackContent__desc {
       font-size: 4rem; }
+  section.container--feedback .feedbackContent__navigation {
+    padding-bottom: 50px; }
   section.container--feedback .feedbackContent__navigation label {
     margin-inline: 15px; }
   section.flexContainer section.container--section05 .leftArea__textArea .leftArea__title h2 {

@@ -582,12 +582,14 @@ section.container--feedback {
     align-items: center;
     justify-content: space-between;
     max-width: 960px;
+    height: 100vh;
     gap: 30px;
     &__feedbackArea {
       display: flex;
       width: 960px;
-      height: 390px;
+      height: 550px;
       position: relative;
+      padding-top: 190px;
       input {
         display: none;
       }
@@ -599,7 +601,7 @@ section.container--feedback {
         .feedbackContent__text {
           display: flex;
           flex-direction: column;
-          padding-top: 120px;
+          padding-top: 60px;
           .feedbackContent__desc {
             color: white;
             font-size: $title-h2;
@@ -675,6 +677,7 @@ section.container--feedback {
       }
     }
     &__navigation {
+      padding-bottom: 230px;
       label {
         margin-inline: 30px;
         cursor: pointer;
@@ -909,7 +912,7 @@ footer.container--footer {
     .feedbackContent {
       //max-width: 960px;
       &__feedbackArea {
-        width: 860px;
+        width: 900px;
         height: 400px;
       }
     }
@@ -1002,10 +1005,8 @@ footer.container--footer {
   //BANNER FEEDBACK - CARDS ////////////////////////////////////////////////////
   section.container--feedback {
     .feedbackContent {
-      //max-width: 960px;
-      &__feedbackArea {
-        width: 670px;
-        height: 445px;
+      &__navigation {
+        padding-bottom: 100px;
       }
     }
   }
@@ -1082,7 +1083,7 @@ footer.container--footer {
     .feedbackContent {
       //max-width: 960px;
       &__feedbackArea {
-        width: 670px;
+        width: 645px;
         height: 445px;
       }
     }
@@ -1104,8 +1105,8 @@ footer.container--footer {
     .feedbackContent {
       //max-width: 960px;
       &__feedbackArea {
-        width: 610px;
-        height: 520px;
+        // width: 610px;
+        // height: 520px;
         .feedbackContent__feedback {
           &__text p {
             padding-inline: 25px;
@@ -1427,6 +1428,7 @@ footer.container--footer {
       &__feedbackArea {
         width: 100%;
         height: 400px;
+        padding-top: 260px;
         .feedbackContent__feedback {
           label {
             display: none;
@@ -1439,6 +1441,8 @@ footer.container--footer {
             }
           }
         }
+      }
+      &__navigation {
       }
     }
   }
@@ -1689,6 +1693,7 @@ footer.container--footer {
       //height: 800px;
       &__feedbackArea {
         height: 580px;
+        padding-top: 230px;
         .feedbackContent__feedback {
           .feedbackContent__text {
             .feedbackContent__desc {
@@ -1773,17 +1778,28 @@ footer.container--footer {
     }
   }
 }
+@media only screen and (max-width: 480px) {
+  //BANNER FEEDBACK - CARDS ////////////////////////////////////////////////////
+  section.container--feedback {
+    .feedbackContent {
+      &__feedbackArea {
+        padding-top: 100px;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 380px) {
   //BANNER FEEDBACK - CARDS ////////////////////////////////////////////////////
   section.container--feedback {
     .feedbackContent {
       &__feedbackArea {
-        height: 760px;
+        padding-top: 30px;
       }
-    }
-    .feedbackContent__navigation {
-      label {
-        margin-inline: 15px;
+      &__navigation {
+        padding-bottom: 20px;
+        label {
+          margin-inline: 15px;
+        }
       }
     }
   }
@@ -1878,7 +1894,7 @@ footer.container--footer {
   section.container--feedback {
     .feedbackContent {
       &__feedbackArea {
-        height: 760px;
+        padding-top: 150px;
         .feedbackContent__feedback {
           .feedbackContent__text {
             .feedbackContent__desc {
@@ -1886,6 +1902,9 @@ footer.container--footer {
             }
           }
         }
+      }
+      &__navigation {
+        padding-bottom: 50px;
       }
     }
     .feedbackContent__navigation {
