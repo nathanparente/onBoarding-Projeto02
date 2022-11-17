@@ -13,8 +13,8 @@
   </head>
   <body>
     <!--MODAL ===================================================================== -->
-    <div id="modal" class="mainModal">
-      <a href="/" role="button" class="mainModal__close" onclick="closeModal()" title="fechar formulário">
+    <div id="siteModal" class="mainModal" role="dialog">
+      <a href="/" role="button" class="mainModal__close" title="fechar formulário">
         <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1L31 31" stroke="#707070"/>
           <path d="M1 31L31 1" stroke="#707070"/>
@@ -91,7 +91,7 @@
         </p>
       </div>
       <div id="callToAction">
-        <a href="#" role="button"><div class="btn--outline" onclick="openModal()">tenho interesse</div></a>
+        <a href="#" role="button" class="show-modal"><div class="btn--outline">tenho interesse</div></a>
         <a href="#buyCourse" role="button"><div class="btn--full">comprar agora</div></a>
       </div>
     </main>
@@ -130,7 +130,7 @@
             <p>R$ 5.000,00</p>
           </div>
           <div class="leftArea__buttonArea">
-            <a href="#" role="button" onclick="openModal()"><div class="btn--outline">tenho interesse</div></a>
+            <a href="#main" role="button" class="show-modal"><div class="btn--outline">tenho interesse</div></a>
             <a href="#buyCourse" role="button"><div class="btn--full">comprar agora</div></a>
           </div>
         </div>
@@ -233,7 +233,7 @@
       </div>
       <div class="bannerValue__callToAction">
         <p>R$ 5.000,00</p>
-        <a href="#" role="button" onclick="openModal()"><div class="btn--full btn--value">fazer o curso</div></a>
+        <a href="#" role="button" class="show-modal"><div class="btn--full btn--value">fazer o curso</div></a>
       </div>
     </section>
     <!--SECTION 02 =============================================================== -->
@@ -535,7 +535,7 @@
         </div>
       </div>
       <div id="callToAction">
-        <a href="#" role="button" onclick="openModal()"><div class="btn--outline">tenho interesse</div></a>
+        <a href="#" role="button" class="show-modal"><div class="btn--outline">tenho interesse</div></a>
         <a href="#buyCourse" role="button"><div class="btn--full">comprar agora</div></a>
       </div>
     </section>
@@ -694,7 +694,7 @@
               <p>R$ 5.000,00</p>
             </div>
             <div class="leftArea__buttonArea">
-              <a href="#" role="button" onclick="openModal()"><div class="btn--outline">tenho interesse</div></a>
+              <a href="#" role="button" class="show-modal"><div class="btn--outline">tenho interesse</div></a>
               <a href="#buyCourse" role="button"><div class="btn--full">comprar agora</div></a>
             </div>
           </div>
@@ -733,7 +733,7 @@
               <p>R$ 5.000,00</p>
             </div>
             <div class="leftArea__buttonArea">
-              <a href="#" role="button" onclick="openModal()"><div class="btn--outline">tenho interesse</div></a>
+              <a href="#" role="button" class="show-modal"><div class="btn--outline">tenho interesse</div></a>
               <a href="#buyCourse" role="button"><div class="btn--full">comprar agora</div></a>
             </div>
           </div>

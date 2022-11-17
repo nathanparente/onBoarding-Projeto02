@@ -1,15 +1,6 @@
-function openModal() {
-  const modal = document.getElementById("modal");
-  //const main = document.getElementById("main");
-  modal.classList.add("enabled");
-  //main.classList.add("disabled");
-}
+//MODAL FUNCTIONALITY
+const toggleModal = () => {
+  document.querySelector("#siteModal").classList.toggle("modal--visibility");
+};
 
-function closeModal() {
-  const modal = document.getElementById("modal");
-  modal.classList.remove("enabled");
-}
-
-// function toggleModal() {
-//   const modal = document.getElementById("modal");
-// }
+document.querySelector(".show-modal").addEventListener("click", toggleModal);
